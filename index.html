@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="icon" href="./images/favicon.ico">
     <link href="https://fonts.googleapis.com/css2?family=Aboreto&family=Dancing+Script:wght@500&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Courgette&display=swap" rel="stylesheet">
@@ -30,12 +31,16 @@
     <main>
         <section class="index-container">
             <h1 class="animate__animated animate__fadeIn animate__slower 7s">¿Estás listo para tu mejor versión?</h1>
-            <img src="./images/salon.jpg" alt="fondo">
+            <img data-aos="zoom-in" src="./images/salon.jpg" alt="fondo">
         </section>
     </main>
     <footer>  
         <div class="animated-footer"></div>
         <p class="p-change"></p>
     </footer>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+      </script>
 </body>
 </html>
