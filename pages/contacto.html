@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="icon" href="../images/favicon.ico">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Courgette&family=Satisfy&display=swap" rel="stylesheet">
@@ -33,7 +34,7 @@
                 <img src="../images/subtitles.png" alt="">
                 <h1 class="animate__animated animate__flipInX">Contactános</h1>
             </div>
-            <form class="contact-form">
+            <form class="contact-form" data-aos="flip-left">
                 <div class="form-control">
                     <input type="text" required>
                     <label for="name">Nombre</label>
@@ -56,7 +57,7 @@
                 </div>
                 <input type="submit" value="Enviar" class="btn">
             </form>
-            <section class="social">
+            <section class="social" data-aos="flip-right">
                 <p>
                 Horarios de Atención: Lunes a Sábados
                 </p>
@@ -87,5 +88,9 @@
         <p class="p-change"></p>
     </footer>
     <script src="../js/js.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+      </script>
 </body>
 </html>
