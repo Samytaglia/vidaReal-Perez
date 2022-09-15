@@ -8,17 +8,18 @@
 
 body{
     font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    display: grid;
-    min-height: 100vh;
     padding-bottom: 0.3em;
     position: relative;
-    grid-template-rows: auto 1fr auto;
+}
+
+main{
+    height: 100vh;
 }
 
 header{
     background-color: rgba(245, 180, 180, 0.884);
     width: 100%;
-    margin-top: 0px;
+    top: 0;
     text-align: center;
     position: fixed;
     z-index: 1;
@@ -58,7 +59,6 @@ nav ul li a:hover{
 .title{
     height: 115px;
     width: 370px;
-    margin-left: 772px;
     margin-top: 20px;
 }
 
@@ -102,6 +102,7 @@ footer{
     background-color: rgba(245, 180, 180, 0.884);
     text-align: center;
     bottom: 0;
+    position: absolute;
     width: 100%;
 }
 
@@ -166,12 +167,14 @@ h1{
 .about-container{
     display: flex;
     flex-direction: column;
+    gap: 3rem;
     flex-wrap: wrap;
     margin-top: 150px;
+    align-items: center;
 }
 
 .historia{
-    margin: 10px 700px;
+    margin: 10px 0;
     text-align: center;
     width: 500px;
     z-index: 1;
@@ -316,6 +319,10 @@ h1{
 }
 
 /*GALERÍA*/
+.gallery-main{
+    height: auto;
+}
+
 .gallery-container{
     margin-top: 150px;
     margin-bottom: 105px;
@@ -335,8 +342,8 @@ h1{
     background-repeat: no-repeat;
     background-size: 100%;
     width: 820px;
-    height: 465px;
-    margin-top: 40px;
+    height: 463px;
+    margin-bottom: 40px;
     box-shadow:  20px 20px 60px #98747a, -20px -20px 60px #ce9ea4;
     border-radius: 8px;
 }
@@ -358,15 +365,15 @@ h1{
 .contact-container{
     margin-top: 150px;
     display: grid;
-    grid-template-columns: 30% 20% 20% 30%;
+    grid-template-columns: 50% 50%;
     grid-template-rows: min-content min-content;
+    justify-items: center;
     grid-template-areas:
-    ". title title ."
-    "social form form form";
+    "title title"
+    "social form";
 }
 .contact-container .title{
     grid-area: title;
-    margin-left: 200px;
     margin-bottom: 30px;
 }
 
@@ -374,11 +381,10 @@ h1{
     grid-area:social;
     background-color:white;
     width: 315px;
-    height: 495px;
-    margin-left: 390px;
-    margin-bottom: 100px;
     border-radius: 8px;
+    margin-left: 60%;
 }
+
 .contact-container p{
     margin-top: 30px;
     margin-left: 20px;
@@ -432,20 +438,17 @@ h1{
     background-color: white;
     padding: 20px 40px;
     border-radius: 8px;
-    width: 58%;
-    height: 495px;
-    margin-left: 150px;
+    width: 80%;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    text-align: center;
-    margin-bottom: 140px;
+    margin-right: 10%;
 }
 
 .form-control{
     position: relative;
-    margin: 20px 0 40px;
-    width: 340px;
+    margin: 20px 0 0;
+    width: 110%;
   }
   
 .form-control input{
@@ -456,15 +459,6 @@ h1{
     padding: 15px 0 10px 0;
     font-size: 18px;
     color:rgb(56, 57, 58);
-  }
-
-  .msg{
-    width: 110%;
-    margin-left: -15px;
-  }
-
-  .msg label{
-    margin-left: 15px ;
   }
 
 .form-control input:focus,
@@ -503,6 +497,7 @@ h1{
     border: 2px solid black;
     border-radius: 8px;
     font-weight: bold;
+    margin-top: 3rem;
   }
 
 .btn:hover{
@@ -519,21 +514,18 @@ h1{
     transform: scale(0.98);
   }
 
-/*RESPONSIVE*/
+/**************RESPONSIVE*****************/
 @media screen and (min-width: 320px) and (max-width: 479px){
 
 header{
     background-color: rgba(245, 180, 180, 0.884);
-
     margin-top: 0px;
-    text-align: center;
     position: fixed;
-    z-index: 1;
+    z-index: 2;
 }
 
 nav{
     background-color: rgb(56, 57, 58);
-    width: 400px;
 }
 
 ul{
@@ -561,29 +553,6 @@ nav ul li a:hover{
     margin-top: -65px;
 }
 
-.title{
-    height: 115px;
-    width: 370px;
-    margin-left: -30px;
-    margin-top: -20px;
-}
-
-.title h1{
-    font-size: 2.3rem;
-}
-    
-.index-back{
-   background: url(../images/hearts.png);
-   background-color: rgba(245, 180, 180, 0.884);
- } 
-
-.índex-container{
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    justify-content: center;
-}
-
 h1{
     margin-top: 40%;
     margin-left: 2%;
@@ -602,10 +571,38 @@ h2{
     font-size: 1.5rem;
 }
 
+.title{
+    height: 115px;
+    margin-left: -60px;
+    margin-top: -20px;
+}
+
+.title h1{
+    font-size: 2.3rem;
+}
+
+.index-back{
+   background: url(../images/hearts.png);
+   background-color: rgba(245, 180, 180, 0.884);
+ } 
+
+ footer{
+    position: fixed;
+    z-index: 2;
+}
+
+.índex-container{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
 .index-container img{
     width: 250px;
     margin-left: 10%;
     margin-top: 115%;
+    margin-bottom: 100px;
 }
 
 .contact-back{
@@ -614,14 +611,14 @@ h2{
 }
 
 .about-container .title{
-margin-top: -35px;
+    margin-top: -35px;
+    margin-left: -30px;
 }
 
 .historia{
-    margin-left: 18px;
     margin-top: -25px;
+    margin-bottom: 100px;
     width: 280px;
-    height: 680px;
     display: inline-block;
 }
 
@@ -692,28 +689,28 @@ margin-top: -35px;
 
 .description{
     grid-area: description;
-    margin-left: 0px;
+    margin-left: 10px;
     margin-top: 20px;
     width: 180px;
     height: 360px;
     font-size: 0.9rem;
 }  
- 
+
 .gallery-container{
     margin-top: 90px;
     margin-bottom: 75px;
-    width: 360px;
+    overflow: hidden;
 }
 
 .gallery-container .title{
-    margin-left: -25px;
+    margin-left: -175px;
     margin-top: 20px;
+    width: 200px;
 }
 
 .picture-frame{
     width: 300px;
     height: 187px;
-    margin-left: -35px;
 }
     
 .pic img{
@@ -725,7 +722,7 @@ margin-top: -35px;
 
 .contact-container{
     background-color: rgba(245, 180, 180, 0.884);
-    background-image: url(../images/hearts.png);
+    background-image: url(../images/hearts.png);  
     display: grid;
     grid-template-columns: 100%;
     grid-template-rows: min-content;
@@ -733,11 +730,6 @@ margin-top: -35px;
     "title"
     "social"
     "form";  
-}
-
-.contact-container .service-container{
-    grid-area: title;
-    margin-left:-30px;
 }
 
 .contact-container .title{
@@ -748,8 +740,7 @@ margin-top: -35px;
 .contact-container .social{
     grid-area:social;
     width: 290px;
-    height: 400x;
-    margin-left: 15px;
+    margin-left: 2px;
     margin-bottom: 50px;
 }
 
@@ -777,13 +768,9 @@ margin-top: -35px;
 
 .contact-container .contact-form{
     grid-area: form;
-    width: 70%;
-    height: 705px;
-    margin-left: 10px;
-}
-
-footer{
-    position: fixed;
+    margin-left: 30px;
+    margin-bottom: 100px;
+    width: 290px;
 }
 }
 
