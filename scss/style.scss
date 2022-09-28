@@ -1,3 +1,8 @@
-body{
-    background-color: pink;
-}
+@import './reset';
+@import './general';
+@import './index';
+@import './nosotros';
+@import './servicios';
+@import './galeria';
+@import './contacto';
+@import './mediaquerys';

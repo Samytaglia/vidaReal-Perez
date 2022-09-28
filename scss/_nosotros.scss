@@ -1,0 +1,20 @@
+.about-container{
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+    flex-wrap: wrap;
+    margin-top: 150px;
+    align-items: center;
+}
+
+.historia{
+    margin: 10px 0;
+    text-align: center;
+    width: 500px;
+    z-index: 1;
+    color:  rgb(56, 57, 58);
+    text-shadow: 1px 1px 0 #8888;
+    p{
+        margin: 10px;
+}
+}
