@@ -7,153 +7,138 @@
     grid-template-areas:
     "title title"
     "social form";
+    .title{
+        grid-area: title;
+        margin-bottom: 30px;
+        h1{
+            font-weight: bold;
+            margin-top: -75px;
+            margin-right: 20px;
+        }
+    }
+    .contact-form{
+        grid-area: form;
+        background-color: white;
+        padding: 20px 40px;
+        border-radius: 8px;
+        width: 80%;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        margin-right: 10%;
+        .form-control{
+            position: relative;
+            margin: 20px 0 0;
+            width: 110%;
+            border: 0;
+            input{
+                background-color: transparent;
+                border: 0;
+                border-bottom: 2px solid  rgba(247, 210, 210, 0.938);
+                width: 90%;
+                padding: 15px 0 10px 0;
+                font-size: 18px;
+                color:rgb(56, 57, 58);
+                &:focus,
+                &:valid{
+                    outline: 0;
+                    border-bottom-color: rgb(241, 97, 157);
+                &:focus + label span,
+                &:valid + label span{
+                    color: rgb(241, 97, 157);
+                    transform: translateY(-30px);
+                }
+                }
+            }
+            label{
+                position: absolute;
+                top: 15px;
+                left: 15px;
+                color: rgba(245, 180, 180, 0.884);
+                span{
+                    display: inline-block;
+                    font-size: 18px;
+                    min-width: 5px;
+                    transition: 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+                }
+            }
+        }  
+        .btn{
+            display: inline-block;
+            width: 235%;
+            cursor: pointer;
+            background-color: rgba(245, 180, 180, 0.884);
+            padding: 15px;
+            font-size: 16px;
+            border: 2px solid black;
+            border-radius: 8px;
+            font-weight: bold;
+            margin-top: 0.6rem;
+            margin-bottom: 1rem;
+            &:hover{
+                background-color: rgb(56, 57, 58);
+                color:  rgba(245, 180, 180, 0.884);
+                border: 2px solid rgba(245, 180, 180, 0.884);
+            }
+            &:focus{
+                outline: 0;
+            }
+            &:active{
+                transform: scale(0.98);
+            }
+        }
+    }
+    .social{
+        grid-area:social;
+        background-color:white;
+        width: 315px;
+        border-radius: 8px;
+        margin-left: 60%;
+        p{
+            margin-top: 30px;
+            margin-left: 20px;
+            margin-bottom: -20px;
+            width: 270px;
+            text-align: center;
+            font-weight: bold;
+            font-size: large;
+            color: rgb(241, 97, 157);
+        }
+        .classic-contact{
+            margin-top: 50px;
+            margin-left: 70px;
+            display: flex;
+            flex-direction: column;
+            flex-wrap: wrap;
+            img{
+                width: 40px;
+                margin: 5px;
+                margin-top: -10px;
+             }
+            a{
+                color: rgb(241, 97, 157);
+                text-decoration: none;
+                display: flex;
+                flex-direction: row;
+                margin-top: 10px;
+            }
+        }
+        .net-contact{
+            margin-top: 25px;
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            img{
+                width: 55px;
+                height: 55px;
+            }
+        }
+        img:hover{
+            opacity: 0.7;
+        }
+    }
 }
 
-.contact-container .title{
-    grid-area: title;
-    margin-bottom: 30px;
-}
-
-.contact-container .social{
-    grid-area:social;
-    background-color:white;
-    width: 315px;
-    border-radius: 8px;
-    margin-left: 60%;
-}
-
-.contact-container p{
-    margin-top: 30px;
-    margin-left: 20px;
-    margin-bottom: -20px;
-    width: 270px;
-    text-align: center;
-    font-weight: bold;
-    font-size: large;
-    color: rgb(241, 97, 157);
-}
-
-.contact-container .classic-contact{
-    margin-top: 50px;
-    margin-left: 70px;
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-}
-
-.contact-container .classic-contact img{
-   width: 40px;
-   margin: 5px;
-   margin-top: -10px;
-}
-
-.contact-container .classic-contact a{
-    color: rgb(241, 97, 157);
-    text-decoration: none;
-    display: flex;
-    flex-direction: row;
-    margin-top: 10px;
-}
-
-.contact-container .net-contact{
-    margin-top: 25px;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-}
- 
-.contact-container .net-contact img{
-    width: 55px;
-    height: 55px;
-}
-
-.contact-container .social img:hover{
-    opacity: 0.7;
-}
-
-.contact-container .contact-form{
-    grid-area: form;
-    background-color: white;
-    padding: 20px 40px;
-    border-radius: 8px;
-    width: 80%;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    margin-right: 10%;
-}
-
-.form-control{
-    position: relative;
-    margin: 20px 0 0;
-    width: 110%;
-    border: 0;
-}
-  
-.form-control input{
-    background-color: transparent;
-    border: 0;
-    border-bottom: 2px solid  rgba(247, 210, 210, 0.938);
-    width: 90%;
-    padding: 15px 0 10px 0;
-    font-size: 18px;
-    color:rgb(56, 57, 58);
-}
-
-.form-control input:focus,
-.form-control input:valid{
-    outline: 0;
-    border-bottom-color: rgb(241, 97, 157);
-}
-
-.form-control label{
-    position: absolute;
-    top: 15px;
-    left: 15px;
-    color: rgba(245, 180, 180, 0.884);
-}
-
-.form-control label span{
-    display: inline-block;
-    font-size: 18px;
-    min-width: 5px;
-    transition: 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
-}
-
-.form-control input:focus + label span,
-.form-control input:valid + label span{
-    color: rgb(241, 97, 157);
-    transform: translateY(-30px);
-}
-
-.btn{
-    display: inline-block;
-    width: 235%;
-    cursor: pointer;
-    background-color: rgba(245, 180, 180, 0.884);
-    padding: 15px;
-    font-size: 16px;
-    border: 2px solid black;
-    border-radius: 8px;
-    font-weight: bold;
-    margin-top: 0.6rem;
-    margin-bottom: 1rem;
-}
-
-.btn:hover{
-    background-color: rgb(56, 57, 58);
-    color:  rgba(245, 180, 180, 0.884);
-    border: 2px solid rgba(245, 180, 180, 0.884);
-}
-
-.btn:focus{
-    outline: 0;
-}
-
-.btn:active{
-    transform: scale(0.98);
-}
-
-  .card{
+.card{
     margin-left: 50%;
 }

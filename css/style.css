@@ -255,34 +255,32 @@ footer {
 
 .gallery-main {
   height: auto; }
-
-.gallery-container {
-  margin-top: 150px;
-  margin-bottom: 105px;
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: space-evenly; }
-
-.gallery-container .title {
-  margin-left: 630px;
-  width: 1000px; }
-
-.picture-frame {
-  background-image: url(../images/fotos.jpg);
-  background-repeat: no-repeat;
-  background-size: 100%;
-  width: 820px;
-  height: 463px;
-  margin-bottom: 40px;
-  box-shadow: 20px 20px 60px #98747a, -20px -20px 60px #ce9ea4;
-  border-radius: 8px; }
-
-.pic img {
-  width: 491px;
-  height: 307px;
-  margin-top: 78px;
-  margin-left: 165px; }
+  .gallery-main .gallery-container {
+    margin-top: 150px;
+    margin-bottom: 105px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly; }
+    .gallery-main .gallery-container .title {
+      margin-left: 630px;
+      width: 1000px; }
+      .gallery-main .gallery-container .title h1 {
+        margin-left: -620px; }
+  .gallery-main .picture-frame {
+    background-image: url(../images/fotos.jpg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    width: 820px;
+    height: 463px;
+    margin-bottom: 40px;
+    box-shadow: 20px 20px 60px #98747a, -20px -20px 60px #ce9ea4;
+    border-radius: 8px; }
+    .gallery-main .picture-frame .pic img {
+      width: 491px;
+      height: 307px;
+      margin-top: 78px;
+      margin-left: 165px; }
 
 .contact-container {
   margin-top: 150px;
@@ -291,131 +289,115 @@ footer {
   grid-template-rows: min-content min-content;
   justify-items: center;
   grid-template-areas: "title title" "social form"; }
-
-.contact-container .title {
-  grid-area: title;
-  margin-bottom: 30px; }
-
-.contact-container .social {
-  grid-area: social;
-  background-color: white;
-  width: 315px;
-  border-radius: 8px;
-  margin-left: 60%; }
-
-.contact-container p {
-  margin-top: 30px;
-  margin-left: 20px;
-  margin-bottom: -20px;
-  width: 270px;
-  text-align: center;
-  font-weight: bold;
-  font-size: large;
-  color: #f1619d; }
-
-.contact-container .classic-contact {
-  margin-top: 50px;
-  margin-left: 70px;
-  display: flex;
-  flex-direction: column;
-  flex-wrap: wrap; }
-
-.contact-container .classic-contact img {
-  width: 40px;
-  margin: 5px;
-  margin-top: -10px; }
-
-.contact-container .classic-contact a {
-  color: #f1619d;
-  text-decoration: none;
-  display: flex;
-  flex-direction: row;
-  margin-top: 10px; }
-
-.contact-container .net-contact {
-  margin-top: 25px;
-  display: flex;
-  flex-direction: row;
-  justify-content: center; }
-
-.contact-container .net-contact img {
-  width: 55px;
-  height: 55px; }
-
-.contact-container .social img:hover {
-  opacity: 0.7; }
-
-.contact-container .contact-form {
-  grid-area: form;
-  background-color: white;
-  padding: 20px 40px;
-  border-radius: 8px;
-  width: 80%;
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  margin-right: 10%; }
-
-.form-control {
-  position: relative;
-  margin: 20px 0 0;
-  width: 110%;
-  border: 0; }
-
-.form-control input {
-  background-color: transparent;
-  border: 0;
-  border-bottom: 2px solid rgba(247, 210, 210, 0.938);
-  width: 90%;
-  padding: 15px 0 10px 0;
-  font-size: 18px;
-  color: #38393a; }
-
-.form-control input:focus,
-.form-control input:valid {
-  outline: 0;
-  border-bottom-color: #f1619d; }
-
-.form-control label {
-  position: absolute;
-  top: 15px;
-  left: 15px;
-  color: rgba(245, 180, 180, 0.884); }
-
-.form-control label span {
-  display: inline-block;
-  font-size: 18px;
-  min-width: 5px;
-  transition: 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55); }
-
-.form-control input:focus + label span,
-.form-control input:valid + label span {
-  color: #f1619d;
-  transform: translateY(-30px); }
-
-.btn {
-  display: inline-block;
-  width: 235%;
-  cursor: pointer;
-  background-color: rgba(245, 180, 180, 0.884);
-  padding: 15px;
-  font-size: 16px;
-  border: 2px solid black;
-  border-radius: 8px;
-  font-weight: bold;
-  margin-top: 0.6rem;
-  margin-bottom: 1rem; }
-
-.btn:hover {
-  background-color: #38393a;
-  color: rgba(245, 180, 180, 0.884);
-  border: 2px solid rgba(245, 180, 180, 0.884); }
-
-.btn:focus {
-  outline: 0; }
-
-.btn:active {
-  transform: scale(0.98); }
+  .contact-container .title {
+    grid-area: title;
+    margin-bottom: 30px; }
+    .contact-container .title h1 {
+      font-weight: bold;
+      margin-top: -75px;
+      margin-right: 20px; }
+  .contact-container .contact-form {
+    grid-area: form;
+    background-color: white;
+    padding: 20px 40px;
+    border-radius: 8px;
+    width: 80%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin-right: 10%; }
+    .contact-container .contact-form .form-control {
+      position: relative;
+      margin: 20px 0 0;
+      width: 110%;
+      border: 0; }
+      .contact-container .contact-form .form-control input {
+        background-color: transparent;
+        border: 0;
+        border-bottom: 2px solid rgba(247, 210, 210, 0.938);
+        width: 90%;
+        padding: 15px 0 10px 0;
+        font-size: 18px;
+        color: #38393a; }
+        .contact-container .contact-form .form-control input:focus, .contact-container .contact-form .form-control input:valid {
+          outline: 0;
+          border-bottom-color: #f1619d; }
+          .contact-container .contact-form .form-control input:focus:focus + label span,
+          .contact-container .contact-form .form-control input:focus:valid + label span, .contact-container .contact-form .form-control input:valid:focus + label span,
+          .contact-container .contact-form .form-control input:valid:valid + label span {
+            color: #f1619d;
+            transform: translateY(-30px); }
+      .contact-container .contact-form .form-control label {
+        position: absolute;
+        top: 15px;
+        left: 15px;
+        color: rgba(245, 180, 180, 0.884); }
+        .contact-container .contact-form .form-control label span {
+          display: inline-block;
+          font-size: 18px;
+          min-width: 5px;
+          transition: 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55); }
+    .contact-container .contact-form .btn {
+      display: inline-block;
+      width: 235%;
+      cursor: pointer;
+      background-color: rgba(245, 180, 180, 0.884);
+      padding: 15px;
+      font-size: 16px;
+      border: 2px solid black;
+      border-radius: 8px;
+      font-weight: bold;
+      margin-top: 0.6rem;
+      margin-bottom: 1rem; }
+      .contact-container .contact-form .btn:hover {
+        background-color: #38393a;
+        color: rgba(245, 180, 180, 0.884);
+        border: 2px solid rgba(245, 180, 180, 0.884); }
+      .contact-container .contact-form .btn:focus {
+        outline: 0; }
+      .contact-container .contact-form .btn:active {
+        transform: scale(0.98); }
+  .contact-container .social {
+    grid-area: social;
+    background-color: white;
+    width: 315px;
+    border-radius: 8px;
+    margin-left: 60%; }
+    .contact-container .social p {
+      margin-top: 30px;
+      margin-left: 20px;
+      margin-bottom: -20px;
+      width: 270px;
+      text-align: center;
+      font-weight: bold;
+      font-size: large;
+      color: #f1619d; }
+    .contact-container .social .classic-contact {
+      margin-top: 50px;
+      margin-left: 70px;
+      display: flex;
+      flex-direction: column;
+      flex-wrap: wrap; }
+      .contact-container .social .classic-contact img {
+        width: 40px;
+        margin: 5px;
+        margin-top: -10px; }
+      .contact-container .social .classic-contact a {
+        color: #f1619d;
+        text-decoration: none;
+        display: flex;
+        flex-direction: row;
+        margin-top: 10px; }
+    .contact-container .social .net-contact {
+      margin-top: 25px;
+      display: flex;
+      flex-direction: row;
+      justify-content: center; }
+      .contact-container .social .net-contact img {
+        width: 55px;
+        height: 55px; }
+    .contact-container .social img:hover {
+      opacity: 0.7; }
 
 .card {
   margin-left: 50%; }
