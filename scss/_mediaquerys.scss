@@ -1,6 +1,6 @@
 @media screen and (min-width: 320px) and (max-width: 479px){
     header{
-        background-color: rgba(245, 180, 180, 0.884);
+        background-color: $rosaMedio;
         margin-top: 0px;
         position: fixed;
         z-index: 2;
@@ -27,7 +27,7 @@
     }
     
     nav ul li a:hover{
-        color: rgba(245, 180, 180, 0.884);
+        color:$rosaMedio;
     }
     
     .logo{
@@ -67,13 +67,13 @@
     
     .index-back{
        background: url(../images/hearts.png);
-       background-color: rgba(245, 180, 180, 0.884);
+       background-color: $rosaMedio;
     } 
     
      footer{
         position: fixed;
         z-index: 2;
-        background-color: rgba(245, 180, 180, 0.884);
+        background-color: $rosaMedio;
     }
     
     .index-nav{
@@ -95,7 +95,7 @@
     
     .contact-back{
         background-image: url(../images/hearts.png);
-        background-color: rgba(245, 180, 180, 0.884);
+        background-color: $rosaMedio;
     }
     
     .about-container .title{

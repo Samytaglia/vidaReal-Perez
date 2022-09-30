@@ -34,7 +34,7 @@
             input{
                 background-color: transparent;
                 border: 0;
-                border-bottom: 2px solid  rgba(247, 210, 210, 0.938);
+                border-bottom: 2px solid $rosaClaro;
                 width: 90%;
                 padding: 15px 0 10px 0;
                 font-size: 18px;
@@ -54,7 +54,7 @@
                 position: absolute;
                 top: 15px;
                 left: 15px;
-                color: rgba(245, 180, 180, 0.884);
+                color: $rosaMedio;
                 span{
                     display: inline-block;
                     font-size: 18px;
@@ -67,7 +67,7 @@
             display: inline-block;
             width: 235%;
             cursor: pointer;
-            background-color: rgba(245, 180, 180, 0.884);
+            background-color: $rosaMedio;
             padding: 15px;
             font-size: 16px;
             border: 2px solid black;
@@ -77,8 +77,8 @@
             margin-bottom: 1rem;
             &:hover{
                 background-color: rgb(56, 57, 58);
-                color:  rgba(245, 180, 180, 0.884);
-                border: 2px solid rgba(245, 180, 180, 0.884);
+                color:  $rosaMedio;
+                border: 2px solid $rosaMedio;
             }
             &:focus{
                 outline: 0;
