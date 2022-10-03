@@ -52,63 +52,49 @@
 #pelu {
     display: none;
     &:target {
-        display: block;
-        display: contents;
-        text-align: center;
+        @include target;
     }
 }
 
 #est-corp {
     display: none;
     &:target {
-        display: block;
-        display: contents;
-        text-align: center;
+        @include target;
     }
 }
 
 #est-fac {
     display: none;
     &:target {
-        display: block;
-        display: contents;
-        text-align: center;
+        @include target;
     }
 }
 
 #masaje {
     display: none;
     &:target {
-        display: block;
-        display: contents;
-        text-align: center;
+        @include target;
     }
 }
 
 #depilacion {
     display: none;
     &:target {
-        display: block;
-        display: contents;
-        text-align: center;
+        @include target;
     }
 }
 
 #cavitacion {
     display: none;
     &:target {
-        display: block;
-        display: contents;
-        text-align: center;
+        @include target;
     }
 }
 
 #uñas {
     display: none;
     &:target {
-        display: block;
-        display: contents;
-        text-align: center;
+        @include target;
     }
 }
 
