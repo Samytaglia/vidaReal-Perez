@@ -135,9 +135,9 @@ footer {
     margin-top: 8%;
     margin-left: 49.5%; }
     .index-container .carousel-item img {
-      margin-left: 26.5%;
+      margin-left: 32%;
       margin-top: 0%;
-      width: 700px;
+      width: 645px;
       border: solid 2px #fae0e4; }
 
 .about-container {
@@ -164,7 +164,9 @@ footer {
   display: grid;
   grid-template-columns: 20% 50% 30%;
   grid-template-rows: min-content min-content min-content;
-  grid-template-areas: ". title ." "service description description" "service description description"; }
+  grid-template-areas: ". title ."
+ "service description description"
+ "service description description"; }
   .service-container .title {
     grid-area: title;
     height: 115px;
@@ -288,7 +290,8 @@ footer {
   grid-template-columns: 50% 50%;
   grid-template-rows: min-content min-content;
   justify-items: center;
-  grid-template-areas: "title title" "social form"; }
+  grid-template-areas: "title title"
+ "social form"; }
   .contact-container .title {
     grid-area: title;
     margin-bottom: 30px; }
@@ -483,7 +486,9 @@ footer {
     display: grid;
     grid-template-columns: 40% 60%;
     grid-template-rows: min-content min-content;
-    grid-template-areas: "title title" "service description" "service description"; }
+    grid-template-areas: "title title"
+ "service description"
+ "service description"; }
   .service-container .title {
     grid-area: title;
     margin-left: -20px;
@@ -539,7 +544,9 @@ footer {
     display: grid;
     grid-template-columns: 100%;
     grid-template-rows: min-content;
-    grid-template-areas: "title" "social" "form"; }
+    grid-template-areas: "title"
+ "social"
+ "form"; }
   .contact-container .title {
     margin-left: -80px;
     margin-top: -20px;
