@@ -409,19 +409,19 @@ footer {
     position: fixed;
     z-index: 2;
     height: 65px; }
-  nav {
-    background-color: #38393a; }
-  ul {
-    display: flex;
-    justify-content: flex-start; }
-  li {
-    display: flex;
-    margin: 5px; }
-  nav ul li a {
-    background-color: #38393a;
-    font-size: 0.7rem; }
-  nav ul li a:hover {
-    color: rgba(245, 180, 180, 0.884); }
+    header nav {
+      background-color: #38393a; }
+      header nav ul {
+        display: flex;
+        justify-content: flex-start; }
+        header nav ul li {
+          display: flex;
+          margin: 5px; }
+          header nav ul li a {
+            background-color: #38393a;
+            font-size: 0.7rem; }
+            header nav ul li a:hover {
+              color: rgba(245, 180, 180, 0.884); }
   .logo {
     width: 94px;
     height: 78px;
@@ -445,8 +445,8 @@ footer {
     height: 115px;
     margin-left: -60px;
     margin-top: -20px; }
-  .title h1 {
-    font-size: 2.3rem; }
+    .title h1 {
+      font-size: 2.3rem; }
   .index-back {
     background: url(../images/hearts.png);
     background-color: rgba(245, 180, 180, 0.884); }
@@ -484,20 +484,20 @@ footer {
     grid-template-columns: 40% 60%;
     grid-template-rows: min-content min-content;
     grid-template-areas: "title title" "service description" "service description"; }
-  .service-container .title {
-    grid-area: title;
-    margin-left: -20px;
-    margin-top: 0px; }
+    .service-container .title {
+      grid-area: title;
+      margin-left: -20px;
+      margin-top: 0px; }
   .service {
     margin-left: 15px;
     margin-top: 0px;
     width: 118px; }
-  .service ul li {
-    width: 110px;
-    height: 50px; }
-  .service ul li a {
-    font-size: 0.7rem;
-    line-height: 3rem; }
+    .service ul li {
+      width: 110px;
+      height: 50px; }
+      .service ul li a {
+        font-size: 0.7rem;
+        line-height: 3rem; }
   #pelu:target {
     display: block; }
   #est-corp:target {
@@ -523,10 +523,10 @@ footer {
     margin-top: 90px;
     margin-bottom: 75px;
     overflow: hidden; }
-  .gallery-container .title {
-    margin-left: -175px;
-    margin-top: 20px;
-    width: 200px; }
+    .gallery-container .title {
+      margin-left: -175px;
+      margin-top: 20px;
+      width: 200px; }
   .picture-frame {
     width: 300px;
     height: 187px; }
@@ -540,10 +540,10 @@ footer {
     grid-template-columns: 100%;
     grid-template-rows: min-content;
     grid-template-areas: "title" "social" "form"; }
-  .contact-container .title {
-    margin-left: -80px;
-    margin-top: -20px;
-    width: 300px; }
+    .contact-container .title {
+      margin-left: -80px;
+      margin-top: -20px;
+      width: 300px; }
   .contact-container .social {
     grid-area: social;
     width: 290px;
@@ -555,12 +555,12 @@ footer {
     width: 30px; }
   .contact-container .net-contact {
     margin-top: 20px; }
-  .contact-container .net-contact img {
-    width: 40px;
-    height: 40px; }
-  .contact-container .net-contact img:hover {
-    width: 45px;
-    height: 45px; }
+    .contact-container .net-contact img {
+      width: 40px;
+      height: 40px; }
+      .contact-container .net-contact img:hover {
+        width: 45px;
+        height: 45px; }
   .contact-container .contact-form {
     grid-area: form;
     margin-left: 30px;

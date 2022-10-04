@@ -501,22 +501,22 @@ footer p {
     z-index: 2;
     height: 65px;
   }
-  nav {
+  header nav {
     background-color: rgb(56, 57, 58);
   }
-  ul {
+  header nav ul {
     display: flex;
     justify-content: flex-start;
   }
-  li {
+  header nav ul li {
     display: flex;
     margin: 5px;
   }
-  nav ul li a {
+  header nav ul li a {
     background-color: rgb(56, 57, 58);
     font-size: 0.7rem;
   }
-  nav ul li a:hover {
+  header nav ul li a:hover {
     color: rgba(245, 180, 180, 0.884);
   }
   .logo {
