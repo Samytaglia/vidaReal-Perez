@@ -13,6 +13,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Courgette&family=Satisfy&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
     <link rel="stylesheet" href="../css/style.css">
     <title>Vida Real | Servicios</title>
 </head>
@@ -30,74 +31,90 @@
     </nav>
     </header>
     <main>
-            <section class="service-container">
-                <div class="title">
-                    <img src="../images/subtitles.png" alt="">
-                    <h1 class="animate__animated animate__flipInX">Nuestros Servicios</h1>
+        <div class="service-title">        
+            <img src="../images/subtitles.png" alt="">
+            <h1 class="animate__animated animate__flipInX">Nuestros Servicios</h1>
+        </div>
+                <div class="accordion accordion-flush" id="accordionFlushExample">
+                    <div class="accordion-item">
+                      <h2 class="accordion-header" id="flush-headingOne">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+                         PELUQUERÍA
+                        </button>
+                      </h2>
+                      <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
+                        <div class="accordion-body">Nuestros servicios de Peluquería incluyen: <strong>Lavado</strong> con productos Premium a medida, según deseo y necesidad. Contarás con el asesoramiento preciso sobre tu cuero cabelludo y pelo para lograr su máximo potencial. <strong>Corte</strong> Utilizamos tijeras y máquinas de varios filos que te proporcionarán precisión y un estilo único. Nuestro equipo podrá asesorarte y hacer lucir tu pelo con el look ideal. <strong>Peinados</strong> Incluye blowdry, liss blowdry, recogidos, trenzas, waves, etc. <strong>Coloración</strong> Te asesoramos de una manera minuciosa para poder aconsejarte sobre qué es lo que tu cabello necesita. Cuáles son los pasos que llevara tu pelo para llegar al objetivo que deseas. Nuestra misión fundamental es mantener tu pelo sano y que luzca intacto. <strong>Tratamientos</strong> Keratina, Brillo, Hidratación, Nutrición, Reparación y Reconstrucción.</div>
+                      </div>
+                    </div>
+                    <div class="accordion-item">
+                      <h2 class="accordion-header" id="flush-headingTwo">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+                          ESTÉTICA CORPORAL
+                        </button>
+                      </h2>
+                      <div id="flush-collapseTwo" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo" data-bs-parent="#accordionFlushExample">
+                        <div class="accordion-body">La estética corporal consta de una serie de procesos estéticos que buscan mejorar la apariencia física usando sesiones que sirven para eliminar defectos. Llevan a cabo procedimientos manuales, tratamientos cosmetológicos y aparatología especializada.
+                      </div>
+                    </div>
+                    <div class="accordion-item">
+                      <h2 class="accordion-header" id="flush-headingThree">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+                            ESTÉTICA FACIAL
+                        </button>
+                      </h2>
+                      <div id="flush-collapseThree" class="accordion-collapse collapse" aria-labelledby="flush-headingThree" data-bs-parent="#accordionFlushExample">
+                        <div class="accordion-body"> La estética facial se centra en el rejuvenecimiento, embellecimiento de la cara y cuello, corrigiendo rasgos para que puedan mejorar la belleza del rostro mediante técnicas no invasivas. Es muy importante conservar la salud de la piel, especialmente de nuestro rostro conforme pasan los años.</div>
+                      </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="flush-headingFour">
+                          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseFour" aria-expanded="false" aria-controls="flush-collapseFour">
+                            MASAJES
+                          </button>
+                        </h2>
+                        <div id="flush-collapseFour" class="accordion-collapse collapse" aria-labelledby="flush-headingFour" data-bs-parent="#accordionFlushExample">
+                          <div class="accordion-body">Se trata de una terapia manual destinada a mejorar el bienestar de la persona mediante el aumento en la producción de endorfinas.
+                            El objetivo principal del Masaje Relajante es aliviar la tensión y conseguir un estado de relajación, priorizando las manipulaciones y los pases suaves por encima de los movimientos bruscos y fuertes, propios de los masajes terapéuticos.</div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="flush-headingFive">
+                          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseFive" aria-expanded="false" aria-controls="flush-collapseFive">
+                              DEPILACIÓN
+                          </button>
+                        </h2>
+                        <div id="flush-collapseFive" class="accordion-collapse collapse" aria-labelledby="flush-headingFive" data-bs-parent="#accordionFlushExample">
+                          <div class="accordion-body">La depilación láser es un método de depilación permanente del vello. Es decir, el vello eliminado no vuelve a crecer y es normal que se necesiten varias sesiones para eliminar la mayor parte del vello en la zona corporal. Existe un porcentaje del vello que queda con poca melanina y el mismo no es posible de eliminar con alta eficacia.
+                            Los resultados de la depilación láser pueden estar muy influenciados por las hormonas tanto en hombre como mujer y en el área facial se produce un crecimiento de vello nuevo de forma muy común y en algunos casos en el cuerpo durante gran parte de la vida, por lo que en estas zonas no es posible la eliminación total y definitiva del mismo. Por ello, es común la realización de más sesiones posteriores al tratamiento para eliminar el nuevo vello.</div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="flush-headingSix">
+                          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseSix" aria-expanded="false" aria-controls="flush-collapseSix">
+                            CAVITACIÓN
+                          </button>
+                        </h2>
+                        <div id="flush-collapseSix" class="accordion-collapse collapse" aria-labelledby="flush-headingSix" data-bs-parent="#accordionFlushExample">
+                          <div class="accordion-body">Se trata de un tratamiento estético sin cirugía cuyo propósito es la eliminación de acumulaciones de grasa localizada, favoreciendo la reducción de volumen corporal a través de la utilización de ultrasonidos de baja</div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="flush-headingSeven">
+                          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseSeven" aria-expanded="false" aria-controls="flush-collapseSeven">
+                             BELLEZA DE UÑAS
+                          </button>
+                        </h2>
+                        <div id="flush-collapseSeven" class="accordion-collapse collapse" aria-labelledby="flush-headingSeven" data-bs-parent="#accordionFlushExample">
+                          <div class="accordion-body">Ofrecemos servicios tanto permanentes como semipermanente, kapping, esculpidas.</div>
+                        </div>
+                    </div>
                 </div>
-                <div class="service">
-                    <ul>
-                        <li><a href="#pelu">PELUQUERÍA</a></li>
-                        <li><a href="#est-corp">ESTÉTICA CORPORAL</a></li>
-                        <li><a href="#est-fac">ESTÉTICA FACIAL</a></li>
-                        <li><a href="#masaje">MASAJES</a></li>
-                        <li><a href="#depilacion">DEPILACIÓN</a></li>
-                        <li><a href="#cavitacion">CAVITACIÓN</a></li>
-                        <li><a href="#uñas">BELLEZA DE UÑAS</a></li>
-                    </ul> 
-                </div>
-                <div class="description">
-                    <div id="pelu">
-                        <h3>PELUQUERÍA</h3>
-                        <p>
-                            Nuestros servicios de Peluquería incluyen: <strong>Lavado</strong> con productos Premium a medida, según deseo y necesidad. Contarás con el asesoramiento preciso sobre tu cuero cabelludo y pelo para lograr su máximo potencial. <strong>Corte</strong> Utilizamos tijeras y máquinas de varios filos que te proporcionarán precisión y un estilo único. Nuestro equipo podrá asesorarte y hacer lucir tu pelo con el look ideal. <strong>Peinados</strong> Incluye blowdry, liss blowdry, recogidos, trenzas, waves, etc. <strong>Coloración</strong> Te asesoramos de una manera minuciosa para poder aconsejarte sobre qué es lo que tu cabello necesita. Cuáles son los pasos que llevara tu pelo para llegar al objetivo que deseas. Nuestra misión fundamental es mantener tu pelo sano y que luzca intacto. <strong>Tratamientos</strong> Keratina, Brillo, Hidratación, Nutrición, Reparación y Reconstrucción.
-                        </p>
-                    </div>  
-                    <div id="est-corp">
-                        <h3>ESTÉTICA CORPORAL</h3>
-                        <p>
-                            La estética corporal consta de una serie de procesos estéticos que buscan mejorar la apariencia física usando sesiones que sirven para eliminar defectos. Llevan a cabo procedimientos manuales, tratamientos cosmetológicos y aparatología especializada.
-                        </p>
-                    </div>  
-                    <div id="est-fac">
-                        <h3>ESTÉTICA FACIAL</h3>
-                        <P>
-                            La estética facial se centra en el rejuvenecimiento, embellecimiento de la cara y cuello, corrigiendo rasgos para que puedan mejorar la belleza del rostro mediante técnicas no invasivas. Es muy importante conservar la salud de la piel, especialmente de nuestro rostro conforme pasan los años.
-                        </P>
-                    </div> 
-                    <div id="masaje">
-                        <h3>MASAJES</h3>
-                        <p>
-                            Se trata de una terapia manual destinada a mejorar el bienestar de la persona mediante el aumento en la producción de endorfinas.
-                            El objetivo principal del Masaje Relajante es aliviar la tensión y conseguir un estado de relajación, priorizando las manipulaciones y los pases suaves por encima de los movimientos bruscos y fuertes, propios de los masajes terapéuticos.
-                        </p>
-                        
-                    </div>  
-                    <div id="depilacion">
-                        <h3>DEPILACION</h3>
-                        <p>
-                            La depilación láser es un método de depilación permanente del vello. Es decir, el vello eliminado no vuelve a crecer y es normal que se necesiten varias sesiones para eliminar la mayor parte del vello en la zona corporal. Existe un porcentaje del vello que queda con poca melanina y el mismo no es posible de eliminar con alta eficacia.
-                            Los resultados de la depilación láser pueden estar muy influenciados por las hormonas tanto en hombre como mujer y en el área facial se produce un crecimiento de vello nuevo de forma muy común y en algunos casos en el cuerpo durante gran parte de la vida, por lo que en estas zonas no es posible la eliminación total y definitiva del mismo. Por ello, es común la realización de más sesiones posteriores al tratamiento para eliminar el nuevo vello.
-                        </p> 
-                    </div>  
-                    <div id="cavitacion">
-                        <h3>CAVITACION</h3>
-                        <p>
-                            Se trata de un tratamiento estético sin cirugía cuyo propósito es la eliminación de acumulaciones de grasa localizada, favoreciendo la reducción de volumen corporal a través de la utilización de ultrasonidos de baja
-                        </p> 
-                    </div> 
-                    <div id="uñas">
-                    <h3>BELLEZA DE UÑAS</h3>
-                    <p> 
-                        Ofrecemos servicios tanto permanentes como semipermanente, kapping, esculpidas. 
-                    </p>
-                    </div> 
-                </div>
-            </section>
     </main>
     <footer>  
         <div class="animated-footer"></div>
         <p class="p-change"></p>
     </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous">
+    </script>
 </body>
 </html>

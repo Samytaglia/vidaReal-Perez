@@ -1,105 +1,28 @@
-.service-container{
-    margin-top: 150px;
-    padding: 20px;
-    display: grid;
-    grid-template-columns: 20% 50% 30%;
-    grid-template-rows: min-content min-content min-content;
-    grid-template-areas: 
-    ". title ."
-    "service description description"
-    "service description description";
-    .title{
-        grid-area: title; 
-        height: 115px;
-        width: 370px;
-        margin-left: 377px;
-        margin-top: 0px;
-    }
+.service-title{
+   img{
+        margin-left: 42%;
+        margin-top: 7%;
+        width: 350px;
+   }
 }
-
-.service{
-    grid-area: service;
-    margin-left: 10px;
-    width: 250px;
-    ul{
-        display: flex;
-        flex-direction: column;
-        flex-wrap: wrap;
-        li{
-            width: 250px;
-            height: 70px;
-            background-image: url(../images/btn.png);
-            background-size: contain;
-            border-radius: 5px;
-            margin: 2px;
-            a{
-                text-align: center;
-                cursor: pointer;
-                font-size: 1.1rem;
-                font-weight: bold;
-                text-decoration: none;
-                line-height: 4.5rem;
-                color: rgb(56, 57, 58);
-                &:hover{
-                    opacity: 0.5;
-                    color: rgb(66, 50, 50);
-                }
-            }
-        }
+.accordion {
+    margin-top: 3%;
+    margin-left: 20%;
+    width: 70%;
+    text-align: center;
+    .accordion-item{
+        background-color: transparent;
     }
-}
-
-#pelu {
-    display: none;
-    &:target {
-        @include target;
+   .accordion-button{
+    background-color: $rosaMedio;
+    border: 2px solid $rosaClaro;
+    height: 60px;
+    text-align: center;
+    &:hover{
+        color: fuchsia;
     }
-}
-
-#est-corp {
-    display: none;
-    &:target {
-        @include target;
+    &:focus{
+        border: 2px solid fuchsia;
     }
-}
-
-#est-fac {
-    display: none;
-    &:target {
-        @include target;
-    }
-}
-
-#masaje {
-    display: none;
-    &:target {
-        @include target;
-    }
-}
-
-#depilacion {
-    display: none;
-    &:target {
-        @include target;
-    }
-}
-
-#cavitacion {
-    display: none;
-    &:target {
-        @include target;
-    }
-}
-
-#uñas {
-    display: none;
-    &:target {
-        @include target;
-    }
-}
-
-.description{
-    grid-area: description;
-    margin-left: 207px;
-    width: 700px;
+   }
 }

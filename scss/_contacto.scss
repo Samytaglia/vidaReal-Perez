@@ -65,7 +65,7 @@
         }  
         .btn{
             display: inline-block;
-            width: 235%;
+            width: 300%;
             cursor: pointer;
             background-color: $rosaMedio;
             padding: 15px;
@@ -75,6 +75,7 @@
             font-weight: bold;
             margin-top: 0.6rem;
             margin-bottom: 1rem;
+            margin-left: 280%;
             &:hover{
                 background-color: rgb(56, 57, 58);
                 color:  $rosaMedio;
