@@ -203,18 +203,20 @@ footer {
     .accordion .accordion-button:focus {
       border: 2px solid fuchsia; }
 
-.gallery-main .gallery-container {
+.gallery-container {
   margin-top: 150px;
   margin-bottom: 105px;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: space-evenly; }
-  .gallery-main .gallery-container .title {
+  .gallery-container .title {
     margin-left: 630px;
     width: 1000px; }
+    .gallery-container .title h1 {
+      margin-left: -620px; }
 
-.gallery-main .picture-frame {
+.picture-frame {
   background-image: url(../images/fotos.jpg);
   background-repeat: no-repeat;
   background-size: 100%;
@@ -223,7 +225,7 @@ footer {
   margin-bottom: 40px;
   box-shadow: 20px 20px 60px #98747a, -20px -20px 60px #ce9ea4;
   border-radius: 8px; }
-  .gallery-main .picture-frame .pic img {
+  .picture-frame .pic img {
     width: 491px;
     height: 307px;
     margin-top: 78px;
