@@ -46,6 +46,9 @@ nav{
     width: 180px;
     height: 150px;
     margin-top: -70px;
+    &:hover { 
+        transform: scale(1.1);
+    }
 }
 
 .title{
@@ -108,7 +111,7 @@ footer{
     animation: changingTxt 7s linear infinite;
     @keyframes changingTxt{
         0%{
-            content: "Made with ❤ by Samy"; 
+            content: "Made with ❤ by Samytaglia"; 
         }
         100%{
             content: "All rights reserved";

@@ -45,6 +45,8 @@ nav {
   width: 180px;
   height: 150px;
   margin-top: -70px; }
+  .logo:hover {
+    transform: scale(1.1); }
 
 .title {
   height: 115px;
@@ -99,7 +101,7 @@ footer {
 
 @keyframes changingTxt {
   0% {
-    content: "Made with ❤ by Samy"; }
+    content: "Made with ❤ by Samytaglia"; }
   100% {
     content: "All rights reserved"; } }
 
@@ -109,7 +111,7 @@ footer {
   margin-bottom: -20px; }
 
 .index-back {
-  background-image: url(../images/Screenshot_2.png);
+  background-image: url(../images/index.png);
   background-repeat: repeat;
   background-size: contain; }
 
@@ -137,7 +139,7 @@ footer {
     .index-container .carousel-item img {
       margin-left: 32%;
       margin-top: 0%;
-      width: 650px;
+      width: 700px;
       border: solid 2px rgba(247, 210, 210, 0.938); }
 
 .about-container {
@@ -155,6 +157,27 @@ footer {
   z-index: 1;
   color: #38393a;
   text-shadow: 1px 1px 0 #8888; }
+  .historia .historia-title {
+    margin: auto;
+    display: table; }
+    .historia .historia-title h3 {
+      position: relative;
+      float: left;
+      width: 115%; }
+      .historia .historia-title h3 span {
+        position: absolute;
+        right: 0;
+        width: 0;
+        background-image: url(../images/back.jpeg);
+        background-position: center;
+        border-left: 1px solid #000;
+        animation: write 3s steps(30); }
+
+@keyframes write {
+  from {
+    width: 100%; }
+  to {
+    width: 0; } }
   .historia p {
     margin: 10px; }
 
@@ -180,34 +203,31 @@ footer {
     .accordion .accordion-button:focus {
       border: 2px solid fuchsia; }
 
-.gallery-main {
-  height: auto; }
-  .gallery-main .gallery-container {
-    margin-top: 150px;
-    margin-bottom: 105px;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: space-evenly; }
-    .gallery-main .gallery-container .title {
-      margin-left: 630px;
-      width: 1000px; }
-      .gallery-main .gallery-container .title h1 {
-        margin-left: -620px; }
-  .gallery-main .picture-frame {
-    background-image: url(../images/fotos.jpg);
-    background-repeat: no-repeat;
-    background-size: 100%;
-    width: 820px;
-    height: 463px;
-    margin-bottom: 40px;
-    box-shadow: 20px 20px 60px #98747a, -20px -20px 60px #ce9ea4;
-    border-radius: 8px; }
-    .gallery-main .picture-frame .pic img {
-      width: 491px;
-      height: 307px;
-      margin-top: 78px;
-      margin-left: 165px; }
+.gallery-main .gallery-container {
+  margin-top: 150px;
+  margin-bottom: 105px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-evenly; }
+  .gallery-main .gallery-container .title {
+    margin-left: 630px;
+    width: 1000px; }
+
+.gallery-main .picture-frame {
+  background-image: url(../images/fotos.jpg);
+  background-repeat: no-repeat;
+  background-size: 100%;
+  width: 820px;
+  height: 463px;
+  margin-bottom: 40px;
+  box-shadow: 20px 20px 60px #98747a, -20px -20px 60px #ce9ea4;
+  border-radius: 8px; }
+  .gallery-main .picture-frame .pic img {
+    width: 491px;
+    height: 307px;
+    margin-top: 78px;
+    margin-left: 165px; }
 
 .contact-container {
   margin-top: 150px;
@@ -331,8 +351,10 @@ footer {
   margin-left: 50%; }
 
 @media screen and (min-width: 320px) and (max-width: 479px) {
+  body {
+    height: auto;
+    overflow-x: hidden; }
   header {
-    background-color: rgba(245, 180, 180, 0.884);
     margin-top: 0px;
     position: fixed;
     z-index: 2;
@@ -350,6 +372,8 @@ footer {
             font-size: 0.7rem; }
             header nav ul li a:hover {
               color: rgba(245, 180, 180, 0.884); }
+  .mq-title {
+    margin-left: 12%; }
   .logo {
     width: 94px;
     height: 78px;
@@ -357,12 +381,11 @@ footer {
   h1 {
     margin-top: 40%;
     margin-left: 2%;
-    font-size: 3rem;
-    color: rgba(247, 210, 210, 0.938);
+    font-size: 1.9rem;
+    color: rgba(245, 180, 180, 0.884);
     text-shadow: 2px 3px #8888; }
   h2 {
     font-family: 'Aboreto', cursive;
-    font-weight: bold;
     height: 60px;
     width: 300px;
     margin-left: 12px;
@@ -373,129 +396,93 @@ footer {
     height: 115px;
     margin-left: -60px;
     margin-top: -20px; }
-    .title h1 {
-      font-size: 2.3rem; }
-  .index-back {
-    background: url(../images/hearts.png);
-    background-color: rgba(245, 180, 180, 0.884); }
   footer {
+    width: 100%;
     position: fixed;
-    z-index: 2;
-    background-color: rgba(245, 180, 180, 0.884); }
-  .index-nav {
-    margin-left: -32px;
-    margin-top: -4%; }
-  .index-container img {
-    width: 250px;
-    margin-left: 10%;
-    margin-top: 115%;
-    margin-bottom: 100px; }
-  .carousel-item {
-    margin-top: 45%;
-    margin-left: 7%; }
-  .contact-back {
-    background-image: url(../images/hearts.png);
-    background-color: rgba(245, 180, 180, 0.884); }
+    z-index: 2; }
+  .index-container h1 {
+    margin-top: 30%;
+    margin-left: 5.5%;
+    font-size: 3rem; }
+  .index-container .carousel-item {
+    margin-top: 90%;
+    margin-left: -9%; }
+    .index-container .carousel-item img {
+      width: 300px; }
   .about-container .title {
     margin-top: -35px;
-    margin-left: -30px; }
+    margin-left: -15px; }
+    .about-container .title h1 {
+      margin-top: -80px; }
   .historia {
     margin-top: -25px;
     margin-bottom: 100px;
     width: 280px;
     display: inline-block; }
-  .service-container {
-    overflow: hidden;
-    margin-top: 90px;
-    margin-left: -30px;
-    display: grid;
-    grid-template-columns: 40% 60%;
-    grid-template-rows: min-content min-content;
-    grid-template-areas: "title title" "service description" "service description"; }
-    .service-container .title {
-      grid-area: title;
-      margin-left: -20px;
-      margin-top: 0px; }
-  .service {
-    margin-left: 15px;
-    margin-top: 0px;
-    width: 118px; }
-    .service ul li {
-      width: 110px;
-      height: 50px; }
-      .service ul li a {
-        font-size: 0.7rem;
-        line-height: 3rem; }
-  #pelu:target {
-    display: block; }
-  #est-corp:target {
-    display: block; }
-  #est-fac:target {
-    display: block; }
-  #masaje:target {
-    display: block; }
-  #depilacion:target {
-    display: block; }
-  #cavitacion:target {
-    display: block; }
-  #uñas:target {
-    display: block; }
-  .description {
-    grid-area: description;
-    margin-left: 20px;
-    margin-top: 20px;
-    width: 180px;
-    height: 360px;
-    font-size: 0.9rem; }
-  .gallery-container {
-    margin-top: 90px;
-    margin-bottom: 75px;
-    overflow: hidden; }
-    .gallery-container .title {
-      margin-left: -175px;
-      margin-top: 20px;
-      width: 200px; }
-  .picture-frame {
-    width: 300px;
-    height: 187px; }
-  .pic img {
-    width: 180px;
-    height: 113px;
-    margin-top: 28px;
-    margin-left: 60px; }
+  .service-title img {
+    margin-top: 25%;
+    margin-left: 15%;
+    width: 70%; }
+  .service-title h1 {
+    font-size: 1.7rem;
+    margin-top: -17%; }
+  .accordion {
+    margin-left: 3%;
+    margin-top: 7%; }
+  .gallery-main {
+    height: auto; }
+    .gallery-main .gallery-container {
+      overflow-x: hidden;
+      margin-top: 90px;
+      margin-bottom: 75px; }
+      .gallery-main .gallery-container .title {
+        margin-bottom: 40px; }
+        .gallery-main .gallery-container .title img {
+          margin-left: -475px;
+          margin-top: 10px; }
+        .gallery-main .gallery-container .title h1 {
+          margin-top: -80px;
+          margin-left: -640px; }
+      .gallery-main .gallery-container .picture-frame {
+        width: 300px;
+        height: 157px; }
+        .gallery-main .gallery-container .picture-frame .pic img {
+          width: 180px;
+          height: 113px;
+          margin-top: 28px;
+          margin-left: 60px; }
   .contact-container {
     display: grid;
     grid-template-columns: 100%;
     grid-template-rows: min-content;
     grid-template-areas: "title" "social" "form"; }
     .contact-container .title {
-      margin-left: -80px;
-      margin-top: -20px;
-      width: 300px; }
-  .contact-container .social {
-    grid-area: social;
-    width: 290px;
-    margin-left: 2px;
-    margin-bottom: 50px; }
-  .contact-container p {
-    margin-bottom: 0px; }
-  .contact-container .classic-contact img {
-    width: 30px; }
-  .contact-container .net-contact {
-    margin-top: 20px; }
-    .contact-container .net-contact img {
-      width: 40px;
-      height: 40px; }
-      .contact-container .net-contact img:hover {
-        width: 45px;
-        height: 45px; }
-  .contact-container .contact-form {
-    grid-area: form;
-    margin-left: 30px;
-    margin-bottom: 100px;
-    width: 290px; }
-  .btn {
-    width: 100%; }
-  .card {
-    margin-left: 4%;
-    text-align: center; } }
+      margin-left: -15px;
+      margin-top: -20px; }
+    .contact-container .contact-form {
+      grid-area: form;
+      margin-left: 30px;
+      margin-bottom: 100px;
+      width: 290px; }
+      .contact-container .contact-form .card {
+        margin-left: 4%;
+        text-align: center; }
+      .contact-container .contact-form .btn {
+        margin-left: -5px; }
+    .contact-container .social {
+      grid-area: social;
+      width: 290px;
+      margin-left: 2px;
+      margin-bottom: 50px; }
+      .contact-container .social p {
+        margin-bottom: 0px; }
+      .contact-container .social .classic-contact img {
+        width: 30px; }
+      .contact-container .social .net-contact {
+        margin-top: 20px; }
+        .contact-container .social .net-contact img {
+          width: 40px;
+          height: 40px; }
+          .contact-container .social .net-contact img:hover {
+            width: 45px;
+            height: 45px; } }

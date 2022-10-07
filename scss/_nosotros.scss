@@ -14,7 +14,31 @@
     z-index: 1;
     color:  rgb(56, 57, 58);
     text-shadow: 1px 1px 0 #8888;
+    .historia-title{
+        margin: auto;
+        display: table;
+        h3 { 
+            position: relative; 
+            float: left;
+            width: 115%;
+            span {
+                position:absolute;
+                right:0;
+                width:0;
+                background-image: url(../images/back.jpeg);
+                background-position: center;
+                border-left: 1px solid #000;
+                animation: write 3s steps(30);
+                @keyframes write {
+                    from { width: 100% }
+                    to { width:0 }
+                }                
+            }
+        }
+    }
     p{
         margin: 10px;
 }
 }
+
+
