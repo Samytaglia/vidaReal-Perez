@@ -375,7 +375,8 @@ footer {
             header nav ul li a:hover {
               color: rgba(245, 180, 180, 0.884); }
   .mq-title {
-    margin-left: 12%; }
+    margin-left: 12%;
+    font-weight: bold; }
   .logo {
     width: 94px;
     height: 78px;
@@ -406,6 +407,8 @@ footer {
     margin-top: 30%;
     margin-left: 5.5%;
     font-size: 3rem; }
+  .index-container button {
+    visibility: hidden; }
   .index-container .carousel-item {
     margin-top: 90%;
     margin-left: -9%; }
@@ -417,6 +420,7 @@ footer {
     .about-container .title h1 {
       margin-top: -80px; }
   .historia {
+    background-image: url(../images/back.jpeg);
     margin-top: -25px;
     margin-bottom: 100px;
     width: 280px;
@@ -429,6 +433,7 @@ footer {
     font-size: 1.7rem;
     margin-top: -17%; }
   .accordion {
+    background-image: url(../images/back.jpeg);
     margin-left: 3%;
     margin-top: 7%; }
   .gallery-main {
