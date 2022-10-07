@@ -432,10 +432,10 @@ footer {
   .service-title h1 {
     font-size: 1.7rem;
     margin-top: -17%; }
-  .accordion {
+  .servicios {
     background-image: url(../images/back.jpeg);
-    margin-left: 3%;
-    margin-top: 7%; }
+    margin-top: 30px;
+    margin-left: -70px; }
   .gallery-main {
     height: auto; }
     .gallery-main .gallery-container {
