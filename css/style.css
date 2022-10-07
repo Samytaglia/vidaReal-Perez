@@ -454,6 +454,7 @@ footer {
           margin-top: 28px;
           margin-left: 60px; }
   .contact-container {
+    background-image: url(../images/back.jpeg);
     display: grid;
     grid-template-columns: 100%;
     grid-template-rows: min-content;
