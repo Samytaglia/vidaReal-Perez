@@ -1,5 +1,6 @@
 body{
-    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    //font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-family: 'Cinzel', serif;
     padding-bottom: 0.3em;
     position: relative;
     background-image: url(../images/back.jpeg);
@@ -22,16 +23,15 @@ header{
 }
 
 nav{
-    background-color: rgb(56, 57, 58);
     ul{
         display: flex;
         justify-content: space-evenly;
+        font-size: 1.2rem;
         align-items: center;
         li{
             display: flex;
             justify-content: center;
             a{
-                background-color: rgb(56, 57, 58);
                 color: white;
                 text-decoration: none;
                 &:hover{
@@ -52,34 +52,27 @@ nav{
 }
 
 .title{
-    height: 115px;
-    width: 370px;
-    margin-top: 20px;
-    img{
-        width: 320px;
-        height: 140px;
-        margin-left: 30px;
-        margin-top: -30px;
-    }
-}
+    margin-top: 150px;
+    margin-bottom: 5%;
+} 
 
 h1{
+    height: 150px;
+    width: 100%;
     text-align: center;
-    font-size: 2.3rem;
-    font-family: 'Satisfy', cursive;
-    background: linear-gradient($rosaMedio, $rosaOscuro);
-    -webkit-background-clip: text;
-    color: transparent;  
-    margin-top: -88px;
-    margin-left: 40px;
+    line-height: 150px;
+    color: $rosaClaro;
+    text-shadow: 2px 4px #8888;
+    background-color: #292b30;
 }
 
 h2{
-    font-family: 'Aboreto', cursive;
+    //font-family: 'Aboreto', cursive;
     height: 60px;
     margin-left: 0px;
     word-spacing: 205px;
     line-height: 60px;
+
 }
 
 h3{
@@ -93,11 +86,16 @@ h4{
     color: $rosaOscuro;
 }
 
+h5{
+    font-family: 'Satisfy', cursive;
+    color: $rosaOscuro; 
+}
+
 footer{
     background-color: $rosaClaro;
     text-align: center;
     bottom: 0;
-    position: absolute;
+    position: fixed;
     width: 100%;
     p{
         margin-top: 28px;
@@ -124,3 +122,4 @@ footer{
     height: 55px;
     margin-bottom: -20px;
 }
+

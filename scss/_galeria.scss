@@ -1,33 +1,64 @@
-     .gallery-container{
-        margin-top: 150px;
-        margin-bottom: 105px;
-        display: flex;
-        flex-direction: row;
-        flex-wrap: wrap;
-        justify-content: space-evenly;
-        .title{
-            margin-left: 630px;
-            width: 1000px;
-            h1{
-                margin-left: -620px;
+    .gallery-main{
+        height: auto;
+        .gallery-container{
+            margin-bottom: 105px;
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: space-evenly;
+            .title{
+                margin-left: 630px;
+                width: 1000px;
+                h1{
+                    margin-left: -620px;
+                }
+            }
+        }
+        .picture-frame{
+            background-image: url(../images/fotos.jpg);
+            background-repeat: no-repeat;
+            background-size: 100%;
+            width: 820px;
+            height: 463px;
+            margin-bottom: 40px;
+            box-shadow:  20px 20px 60px #98747a, -20px -20px 60px #ce9ea4;
+            border-radius: 8px;
+            .pic img{
+                width: 491px;
+                height: 307px;  
+                margin-top: 78px;
+                margin-left: 165px;
+            }
+            .btn-container{
+                margin-top: -23%;
+                position: relative;
+                display: flex;
+                justify-content: center;
+                .btnPic{
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    align-items: center;
+                    margin: 2rem;
+                    width: 2rem;
+                    height: 1rem;
+                    border: none;
+                    text-decoration: none;
+                    padding:0;
+                    color: white;
+                    background-color: transparent;
+                    opacity: 0.4;
+                    &:hover{
+                            font-style: normal;
+                            font-weight: 400;
+                            font-size: 1.75rem;
+                            line-height: 2.5rem;
+                            color: #FDB0FF;
+                            text-shadow: 0px 3px 15px #FB4EFF; 
+                            opacity: 1;
+                        }
+                    }
             }
         }
     }
-    .picture-frame{
-        background-image: url(../images/fotos.jpg);
-        background-repeat: no-repeat;
-        background-size: 100%;
-        width: 820px;
-        height: 463px;
-        margin-bottom: 40px;
-        box-shadow:  20px 20px 60px #98747a, -20px -20px 60px #ce9ea4;
-        border-radius: 8px;
-        .pic img{
-            width: 491px;
-            height: 307px;  
-            margin-top: 78px;
-            margin-left: 165px;
-        }
-    }
-
-
+    

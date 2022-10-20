@@ -1,28 +1,25 @@
-.service-title{
-   img{
-        margin-left: 42%;
-        margin-top: 7%;
-        width: 350px;
-   }
-}
 .accordion {
-    margin-top: 3%;
-    margin-left: 20%;
+    margin-top: 5%;
+    margin-left: 15%;
     width: 70%;
     text-align: center;
+    font-size: 1.2rem;
     .accordion-item{
         background-color: transparent;
     }
-   .accordion-button{
-    background-color: $rosaMedio;
-    border: 2px solid $rosaClaro;
-    height: 60px;
-    text-align: center;
-    &:hover{
-        color: fuchsia;
-    }
-    &:focus{
-        border: 2px solid fuchsia;
-    }
+    .accordion-button{
+        background-color: $rosaMedio;
+        border: 2px solid $rosaClaro;
+        height: 60px;
+        text-align: center;
+        &:hover{
+            color: $rosaOscuro;
+            font-weight: bold;
+        }
+        &:focus{
+            border: 2px solid $rosaOscuro;
+            box-shadow: 0 0 1px rgba(0,0,0,0.1);
+        }
    }
 }
+

@@ -9,19 +9,15 @@
     "social form";
     .title{
         grid-area: title;
-        margin-bottom: 30px;
-        h1{
-            font-weight: bold;
-            margin-top: -75px;
-            margin-right: 20px;
-        }
+        width: 100%;
+        margin-top: 0%;
     }
     .contact-form{
         grid-area: form;
         background-color: white;
         padding: 20px 40px;
         border-radius: 8px;
-        width: 80%;
+        width: 75%;
         display: flex;
         flex-direction: row;
         flex-wrap: wrap;
@@ -35,7 +31,7 @@
                 background-color: transparent;
                 border: 0;
                 border-bottom: 2px solid $rosaClaro;
-                width: 90%;
+                width: 98%;
                 padding: 15px 0 10px 0;
                 font-size: 18px;
                 color:rgb(56, 57, 58);
@@ -63,7 +59,7 @@
                 }
             }
         }  
-        .btn{
+        #btn{
             display: inline-block;
             width: 300%;
             cursor: pointer;
@@ -73,9 +69,12 @@
             border: 2px solid black;
             border-radius: 8px;
             font-weight: bold;
-            margin-top: 0.6rem;
-            margin-bottom: 1rem;
-            margin-left: 280%;
+            margin-top: 25%;
+            margin-bottom: -15%;
+            margin-left: 250%;
+            text-decoration: none;
+            text-align: center;
+            color: black;
             &:hover{
                 background-color: rgb(56, 57, 58);
                 color:  $rosaMedio;
@@ -114,7 +113,7 @@
             img{
                 width: 40px;
                 margin: 5px;
-                margin-top: -10px;
+                margin-top: 0px;
              }
             a{
                 color: rgb(241, 97, 157);
@@ -138,8 +137,4 @@
             opacity: 0.7;
         }
     }
-}
-
-.card{
-    margin-left: 50%;
 }
