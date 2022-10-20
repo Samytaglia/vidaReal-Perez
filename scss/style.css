@@ -32,6 +32,7 @@ header {
 nav ul {
   display: flex;
   justify-content: space-evenly;
+  font-size: 1.2rem;
   align-items: center;
 }
 nav ul li {
@@ -340,7 +341,7 @@ footer p {
   background-color: white;
   padding: 20px 40px;
   border-radius: 8px;
-  width: 80%;
+  width: 75%;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
@@ -356,7 +357,7 @@ footer p {
   background-color: transparent;
   border: 0;
   border-bottom: 2px solid rgba(247, 210, 210, 0.938);
-  width: 90%;
+  width: 98%;
   padding: 15px 0 10px 0;
   font-size: 18px;
   color: rgb(56, 57, 58);
@@ -391,8 +392,9 @@ footer p {
   border: 2px solid black;
   border-radius: 8px;
   font-weight: bold;
-  margin-top: 0.6rem;
-  margin-bottom: 1rem;
+  margin-top: 25%;
+  margin-bottom: -15%;
+  margin-left: 250%;
   text-decoration: none;
   text-align: center;
   color: black;
@@ -435,7 +437,7 @@ footer p {
 .contact-container .social .classic-contact img {
   width: 40px;
   margin: 5px;
-  margin-top: -10px;
+  margin-top: 0px;
 }
 .contact-container .social .classic-contact a {
   color: rgb(241, 97, 157);
@@ -456,10 +458,6 @@ footer p {
 }
 .contact-container .social img:hover {
   opacity: 0.7;
-}
-
-.card {
-  margin-left: 50%;
 }
 
 .error-back {
@@ -560,32 +558,13 @@ footer p {
     position: fixed;
     z-index: 2;
     height: 65px;
-    /*  nav{
-         background-color: rgb(56, 57, 58);
-         ul{
-             display: flex;
-             justify-content:flex-start;
-             li{
-                 display: flex;
-                 margin: 5px;
-                 a{
-                     background-color: rgb(56, 57, 58);
-                     font-size: 0.7rem;
-                     &:hover{
-                         color:$rosaMedio;
-                     }
-                 }
-             }
-         }
-     } */
   }
-  /* .mq-title{
-      margin-left: 12%;
-      font-weight: bold;
-  } */
   .navbar .mobile-navbar {
     background-color: rgb(56, 57, 58);
     margin-top: 2%;
+  }
+  .navbar .mobile-navbar ul {
+    font-size: 1rem;
   }
   .logo {
     width: 94px;
@@ -603,12 +582,6 @@ footer p {
     line-height: 60px;
     font-size: 1.5rem;
   }
-  /*  .title{
-        height: 115px;
-        margin-left: -60px;
-        margin-top: -20px;
-    }
-  */
   footer {
     width: 100%;
     position: fixed;
@@ -664,69 +637,58 @@ footer p {
     overflow-x: hidden;
     margin-top: 10%;
     margin-bottom: 75px;
-    /* .title{
-        margin-bottom: 40px;
-        img{
-            margin-left: -475px;
-            margin-top: 10px;
-        }
-        h1{
-            margin-top: -80px;
-            margin-left: -640px;
-        } */
   }
-  .picture-frame {
+  .gallery-container .picture-frame {
     width: 300px;
     height: 157px;
   }
-  .picture-frame .pic img {
+  .gallery-container .picture-frame .pic img {
     width: 180px;
     height: 113px;
     margin-top: 28px;
     margin-left: 60px;
   }
-}
-.contact-container {
-  background-image: url(../images/back.jpeg);
-  display: grid;
-  grid-template-columns: 100%;
-  grid-template-rows: -webkit-min-content;
-  grid-template-rows: min-content;
-  grid-template-areas: "title" "social" "form";
-}
-.contact-container .contact-form {
-  grid-area: form;
-  margin-left: 30px;
-  margin-bottom: 100px;
-  width: 290px;
-}
-.contact-container .contact-form .card {
-  margin-left: 4%;
-  text-align: center;
-}
-.contact-container .contact-form .btn {
-  margin-left: -5px;
-}
-.contact-container .social {
-  grid-area: social;
-  width: 290px;
-  margin-left: 2px;
-  margin-bottom: 50px;
-}
-.contact-container .social p {
-  margin-bottom: 0px;
-}
-.contact-container .social .classic-contact img {
-  width: 30px;
-}
-.contact-container .social .net-contact {
-  margin-top: 20px;
-}
-.contact-container .social .net-contact img {
-  width: 40px;
-  height: 40px;
-}
-.contact-container .social .net-contact img:hover {
-  width: 45px;
-  height: 45px;
+  .contact-container {
+    background-image: url(../images/back.jpeg);
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: -webkit-min-content;
+    grid-template-rows: min-content;
+    grid-template-areas: "title" "social" "form";
+  }
+  .contact-container .title {
+    margin-bottom: 8%;
+  }
+  .contact-container .contact-form {
+    grid-area: form;
+    margin-left: 30px;
+    margin-bottom: 150px;
+    width: 290px;
+  }
+  .contact-container .contact-form #btn {
+    margin-left: -6px;
+  }
+  .contact-container .social {
+    grid-area: social;
+    width: 290px;
+    margin-left: 2px;
+    margin-bottom: 50px;
+  }
+  .contact-container .social p {
+    margin-bottom: 0px;
+  }
+  .contact-container .social .classic-contact img {
+    width: 30px;
+  }
+  .contact-container .social .net-contact {
+    margin-top: 20px;
+  }
+  .contact-container .social .net-contact img {
+    width: 40px;
+    height: 40px;
+  }
+  .contact-container .social .net-contact img:hover {
+    width: 45px;
+    height: 45px;
+  }
 }/*# sourceMappingURL=style.css.map */
