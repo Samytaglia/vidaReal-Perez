@@ -1,5 +1,5 @@
 .contact-container{
-    margin-top: 150px;
+    //margin-top: 10px;
     display: grid;
     grid-template-columns: 50% 50%;
     grid-template-rows: min-content min-content;
@@ -22,6 +22,7 @@
         flex-direction: row;
         flex-wrap: wrap;
         margin-right: 10%;
+        margin-bottom: 20%;
         .form-control{
             position: relative;
             margin: 20px 0 0;
@@ -95,6 +96,7 @@
         width: 315px;
         border-radius: 8px;
         margin-left: 60%;
+        margin-bottom: 20%;
         p{
             margin-top: 30px;
             margin-left: 20px;
