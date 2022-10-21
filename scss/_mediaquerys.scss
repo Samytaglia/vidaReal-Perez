@@ -5,19 +5,29 @@
         background-repeat: repeat;
     }
 
-    .navbar{
-        .mobile-navbar{
-            background-color:  rgb(56, 57, 58);
-            margin-top: 2%;
-            ul{
-                font-size: 1rem;
+    header{
+        margin-top: 0px;
+        //position: fixed;
+        z-index: 2;
+        //height: 65px;  
+        .navbar{
+            .mobile-navbar{
+                background-color:  rgb(56, 57, 58);
+                margin-top: 2%;
+                ul{
+                    font-size: 1rem;
+                    li{
+                        margin: 6%;
+                    }
+                }
+            }
         }
     }
-    }
-    
+
     .logo{
         width: 94px;
         height: 78px;
+        margin-bottom: -25px;
     }
     
     h1{
