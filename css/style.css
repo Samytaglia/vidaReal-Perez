@@ -449,10 +449,6 @@ footer {
     height: auto;
     overflow-x: hidden;
     background-repeat: repeat; }
-  header {
-    margin-top: 0px;
-    z-index: 2;
-    height: 65px; }
   .navbar .mobile-navbar {
     background-color: #38393a;
     margin-top: 2%; }
