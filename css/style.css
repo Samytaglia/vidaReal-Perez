@@ -24,20 +24,19 @@ header {
   text-align: center;
   position: fixed;
   z-index: 1; }
-
-nav ul {
-  display: flex;
-  justify-content: space-evenly;
-  font-size: 1.2rem;
-  align-items: center; }
-  nav ul li {
+  header nav ul {
     display: flex;
-    justify-content: center; }
-    nav ul li a {
-      color: white;
-      text-decoration: none; }
-      nav ul li a:hover {
-        color: rgba(247, 210, 210, 0.938); }
+    justify-content: space-evenly;
+    font-size: 1.2rem;
+    align-items: center; }
+    header nav ul li {
+      display: flex;
+      justify-content: center; }
+      header nav ul li a {
+        color: white;
+        text-decoration: none; }
+        header nav ul li a:hover {
+          color: rgba(247, 210, 210, 0.938); }
 
 .logo {
   width: 180px;
@@ -47,7 +46,7 @@ nav ul {
     transform: scale(1.1); }
 
 .title {
-  margin-top: 150px;
+  margin-top: 145px;
   margin-bottom: 5%; }
 
 h1 {
@@ -318,7 +317,8 @@ footer {
       font-weight: bold;
       margin-top: 25%;
       margin-bottom: -15%;
-      margin-left: 250%;
+      text-align: center;
+      margin-left: 230%;
       text-decoration: none;
       text-align: center;
       color: black; }
@@ -444,6 +444,7 @@ footer {
   color: rgba(245, 180, 180, 0.884);
   background-color: rgba(247, 210, 210, 0.938); }
 
+/*MOBILE*/
 @media screen and (min-width: 320px) and (max-width: 479px) {
   body {
     height: auto;
@@ -458,7 +459,7 @@ footer {
       header .navbar .mobile-navbar ul {
         font-size: 1rem; }
         header .navbar .mobile-navbar ul li {
-          margin: 6%; }
+          margin: 8%; }
   .logo {
     width: 94px;
     height: 78px;
@@ -492,12 +493,8 @@ footer {
       width: 300px;
       position: relative;
       margin-top: 20%;
-      margin-left: 25%; }
-  .about-container .title {
-    margin-top: -35px;
-    margin-left: -15px; }
-    .about-container .title h1 {
-      margin-top: -80px; }
+      margin-left: 37%;
+      margin-bottom: 5%; }
   .historia {
     margin-top: -25px;
     margin-bottom: 100px;
@@ -507,7 +504,7 @@ footer {
     margin-top: 45%; }
   .servicios {
     margin-top: 10%;
-    margin-left: -60px; }
+    margin-left: -35px; }
     .servicios .accordion {
       width: 80%; }
       .servicios .accordion .accordion-body {
@@ -556,3 +553,87 @@ footer {
           .contact-container .social .net-contact img:hover {
             width: 45px;
             height: 45px; } }
+
+/*TABLET*/
+@media screen and (max-width: 1023px) {
+  header {
+    z-index: 2; }
+    header .navbar .mobile-navbar {
+      background-color: #38393a;
+      margin-top: 2%; }
+      header .navbar .mobile-navbar li {
+        margin: 8%; }
+  .logo {
+    margin-bottom: -50px; }
+  .index-container h1 {
+    margin-top: 20%;
+    margin-left: 13%;
+    width: 75%; }
+  .index-container button {
+    visibility: hidden; }
+  .index-container .carousel-item {
+    margin-top: 90%;
+    margin-left: -9%; }
+    .index-container .carousel-item img {
+      width: 700px;
+      position: relative;
+      margin-top: -75%;
+      margin-left: 27%; }
+  footer {
+    width: 100%;
+    position: fixed;
+    z-index: 2; }
+  .about-container h1 {
+    margin-top: -5%; }
+  .title {
+    margin-top: 14%; }
+  .contact-container .title h1 {
+    margin-top: -5%; }
+  .gallery-container {
+    margin-top: 10%;
+    margin-bottom: 75px; }
+    .gallery-container .picture-frame {
+      width: 720px;
+      height: 363px; }
+      .gallery-container .picture-frame .pic img {
+        width: 430px;
+        height: 270px;
+        margin-top: 70px;
+        margin-left: 145px; }
+  .contact-container {
+    background-image: url(../images/back.jpeg);
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: min-content;
+    grid-template-areas: "title" "social" "form"; }
+    .contact-container .title {
+      margin-bottom: 8%; }
+    .contact-container .contact-form {
+      grid-area: form;
+      margin-left: 70px;
+      margin-bottom: 150px;
+      width: 650px; }
+      .contact-container .contact-form #btn {
+        margin-left: 65px; }
+    .contact-container .social {
+      grid-area: social;
+      width: 400px;
+      margin-left: 2px;
+      margin-bottom: 50px; }
+      .contact-container .social p {
+        margin-left: 70px; }
+      .contact-container .social .classic-contact {
+        margin-left: 120px; } }
+
+/*LAPTOP*/
+@media screen and (min-width: 949px) and (max-width: 1280px) {
+  .index-container .carousel-item img {
+    margin-top: 2.5%; }
+  .about-container h1 {
+    margin-top: -2%; }
+  .title {
+    margin-top: 10%; }
+  .contact-container .title h1 {
+    margin-top: -2%; }
+  .contact-container .contact-form #btn {
+    margin-left: 100%; } }

@@ -1,3 +1,4 @@
+/*MOBILE*/
 @media screen and (min-width: 320px) and (max-width: 479px){
     body{
         height: auto;
@@ -7,9 +8,7 @@
 
     header{
         margin-top: 0px;
-        //position: fixed;
         z-index: 2;
-        //height: 65px;  
         .navbar{
             .mobile-navbar{
                 background-color:  rgb(56, 57, 58);
@@ -17,7 +16,7 @@
                 ul{
                     font-size: 1rem;
                     li{
-                        margin: 6%;
+                        margin: 8%;
                     }
                 }
             }
@@ -68,16 +67,9 @@
                 width: 300px;
                 position: relative;
                 margin-top: 20%;
-                margin-left: 25%;
+                margin-left: 37%;
+                margin-bottom: 5%;
             }
-        }
-    }
-    
-    .about-container .title{
-        margin-top: -35px;
-        margin-left: -15px;
-        h1{
-            margin-top: -80px;
         }
     }
     
@@ -87,12 +79,14 @@
         width: 280px;
         display: inline-block;
     }
+
     .title{
         margin-top: 45%;
     }
+    
     .servicios{
         margin-top: 10%;
-        margin-left: -60px;
+        margin-left: -35px;
         .accordion{
             width: 80%;
             .accordion-body{
@@ -116,6 +110,7 @@
             }  
         }
     }
+
     .contact-container{
         background-image: url(../images/back.jpeg);
         display: grid;
@@ -163,3 +158,151 @@
     }    
 }
 
+/*TABLET*/
+@media screen and (max-width: 1023px){
+    header{
+        z-index: 2;
+        .navbar{
+            .mobile-navbar{
+                background-color:  rgb(56, 57, 58);
+                margin-top: 2%;
+                    li{
+                        margin: 8%;
+                    }
+                }
+            }
+        }
+
+    .logo{
+        margin-bottom: -50px;
+    }
+
+    .index-container{
+        h1{
+            margin-top: 20%;
+            margin-left: 13%;
+            width: 75%;
+        }
+        button{
+          visibility: hidden;
+        }
+        .carousel-item{
+            margin-top: 90%;
+            margin-left: -9%;
+            img{
+                width: 700px;
+                position: relative;
+                margin-top: -75%;
+                margin-left: 27%;
+            }
+        }
+    }
+
+    footer{
+        width: 100%;
+        position: fixed;
+        z-index: 2;
+    }
+
+    .about-container{
+        h1{
+            margin-top: -5%;
+        }
+    }
+
+    .title{
+        margin-top: 14%;
+    }
+
+    .contact-container{
+        .title{
+            h1{
+                margin-top: -5%;
+            }
+        }
+    }
+
+    .gallery-container{
+        margin-top: 10%;
+        margin-bottom: 75px;
+        .picture-frame{
+            width: 720px;
+            height: 363px;
+            .pic img{
+                width: 430px;
+                height: 270px;  
+                margin-top: 70px;
+                margin-left: 145px;
+            }  
+        }
+    }
+
+    .contact-container{
+        background-image: url(../images/back.jpeg);
+        display: grid;
+        grid-template-columns: 100%;
+        grid-template-rows: min-content;
+        grid-template-areas:
+        "title"
+        "social"
+        "form";  
+        .title{
+            margin-bottom: 8%;
+        }
+        .contact-form{
+            grid-area: form;
+            margin-left: 70px;
+            margin-bottom: 150px;
+            width: 650px;
+            #btn{
+                margin-left: 65px;
+            }
+        }
+        .social{
+            grid-area:social;
+            width: 400px;
+            margin-left: 2px;
+            margin-bottom: 50px;
+            p{
+            margin-left: 70px;
+        }
+         .classic-contact{
+            margin-left: 120px;
+        }
+        }
+    }     
+}
+
+/*LAPTOP*/
+@media screen and (min-width: 949px) and (max-width: 1280px) {
+    .index-container{
+        .carousel-item{
+            img{
+                margin-top: 2.5%;
+            }
+        }
+    }
+
+    .about-container{
+        h1{
+            margin-top: -2%;
+        }
+    }
+
+    .title{
+        margin-top: 10%;
+    }
+
+    .contact-container{
+        .title{
+            h1{
+                margin-top: -2%;
+            }
+        }
+        .contact-form{
+            #btn{
+                margin-left: 100%;
+            }
+    }
+    }
+}

@@ -1,5 +1,4 @@
 body{
-    //font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     font-family: 'Cinzel', serif;
     padding-bottom: 0.3em;
     position: relative;
@@ -20,26 +19,25 @@ header{
     text-align: center;
     position: fixed;
     z-index: 1;
-}
-
-nav{
-    ul{
-        display: flex;
-        justify-content: space-evenly;
-        font-size: 1.2rem;
-        align-items: center;
-        li{
+    nav{
+        ul{
             display: flex;
-            justify-content: center;
-            a{
-                color: white;
-                text-decoration: none;
-                &:hover{
-                    color: $rosaClaro;
-    }
-        }
-            }
+            justify-content: space-evenly;
+            font-size: 1.2rem;
+            align-items: center;
+            li{
+                display: flex;
+                justify-content: center;
+                a{
+                    color: white;
+                    text-decoration: none;
+                    &:hover{
+                        color: $rosaClaro;
+                    }
                 }
+            }
+        }
+    }
 }
 
 .logo{
@@ -52,7 +50,7 @@ nav{
 }
 
 .title{
-    margin-top: 150px;
+    margin-top: 145px;
     margin-bottom: 5%;
 } 
 
