@@ -1,0 +1,86 @@
+.error-back{
+    background-image: url(../images/ladrillos.jpeg);
+    .error-container{
+        background-color: rgba(0, 0, 0, 0.23);
+        h1{
+            position: fixed;
+            background-color: transparent;
+            margin-top: 23%;
+            font-size: 3rem;
+            text-align: center;
+            animation-name: parpadeo;
+            animation-duration: 4s;
+            animation-timing-function: linear;
+            animation-iteration-count: infinite;
+            @-moz-keyframes parpadeo{  
+            0% { opacity: 1.0; }
+            50% { opacity: 0.0; }
+            100% { opacity: 1.0; }
+            }
+    
+            @-webkit-keyframes parpadeo {  
+            0% { opacity: 1.0; }
+            50% { opacity: 0.0; }
+            100% { opacity: 1.0; }
+            }
+    
+            @keyframes parpadeo {  
+            0% { opacity: 1.0; }
+            50% { opacity: 0.0; }
+            100% { opacity: 1.0; }
+            } 
+            }   
+        p {
+            position: fixed;
+            margin-top: 35%;
+            margin-left: 30%;
+            font-size: 1.2rem;
+            a{
+                color: rgb(161, 210, 238);
+                text-decoration: none;
+            }
+        }
+        .neon {
+            color: #fff;
+            text-shadow:
+                0 0 5px #fff,
+                0 0 10px #fff,
+                0 0 20px #fff,
+                0 0 40px $fucsia,
+                0 0 80px $fucsia,
+                0 0 90px $fucsia,
+                0 0 100px $fucsia,
+                0 0 150px $fucsia,
+        } 
+    }
+    
+}
+.navbar{    
+    height: 85px;
+    margin-top: 3.5%;
+    width: 100%;
+    background-color: black;
+    .navbar-toggler{
+        color: $rosaMedio;
+        background-color: $rosaClaro;
+    }
+    .mobile-navbar{
+        background-color: transparent;
+        }
+    .nav-item{
+        margin: 15%;
+        .nav-link{
+            color: white;
+            background-color: transparent;
+            &:hover{
+                color: $rosaClaro;
+            }
+            .logo{
+                margin-top: -40%;
+                margin-left: 7%;
+                
+            }
+        }   
+    }
+}
+

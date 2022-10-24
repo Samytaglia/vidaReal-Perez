@@ -131,8 +131,8 @@ footer {
     margin-left: 51%; }
     .index-container .carousel-item img {
       margin-left: 10%;
-      margin-top: 2.5%;
-      width: 635px;
+      margin-top: 1.5%;
+      width: 638px;
       border: solid 2px rgba(247, 210, 210, 0.938);
       position: fixed; }
 
@@ -378,6 +378,77 @@ footer {
     .contact-container .social img:hover {
       opacity: 0.7; }
 
+.error-back {
+  background-image: url(../images/ladrillos.jpeg); }
+  .error-back .error-container {
+    background-color: rgba(0, 0, 0, 0.23); }
+    .error-back .error-container h1 {
+      position: fixed;
+      background-color: transparent;
+      margin-top: 23%;
+      font-size: 3rem;
+      text-align: center;
+      animation-name: parpadeo;
+      animation-duration: 4s;
+      animation-timing-function: linear;
+      animation-iteration-count: infinite; }
+
+@-moz-keyframes parpadeo {
+  0% {
+    opacity: 1.0; }
+  50% {
+    opacity: 0.0; }
+  100% {
+    opacity: 1.0; } }
+
+@-webkit-keyframes parpadeo {
+  0% {
+    opacity: 1.0; }
+  50% {
+    opacity: 0.0; }
+  100% {
+    opacity: 1.0; } }
+
+@keyframes parpadeo {
+  0% {
+    opacity: 1.0; }
+  50% {
+    opacity: 0.0; }
+  100% {
+    opacity: 1.0; } }
+    .error-back .error-container p {
+      position: fixed;
+      margin-top: 35%;
+      margin-left: 30%;
+      font-size: 1.2rem; }
+      .error-back .error-container p a {
+        color: #a1d2ee;
+        text-decoration: none; }
+    .error-back .error-container .neon {
+      color: #fff;
+      text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 20px #fff, 0 0 40px #ee2cb4, 0 0 80px #ee2cb4, 0 0 90px #ee2cb4, 0 0 100px #ee2cb4, 0 0 150px #ee2cb4; }
+
+.navbar {
+  height: 85px;
+  margin-top: 3.5%;
+  width: 100%;
+  background-color: black; }
+  .navbar .navbar-toggler {
+    color: rgba(245, 180, 180, 0.884);
+    background-color: rgba(247, 210, 210, 0.938); }
+  .navbar .mobile-navbar {
+    background-color: transparent; }
+  .navbar .nav-item {
+    margin: 15%; }
+    .navbar .nav-item .nav-link {
+      color: white;
+      background-color: transparent; }
+      .navbar .nav-item .nav-link:hover {
+        color: rgba(247, 210, 210, 0.938); }
+      .navbar .nav-item .nav-link .logo {
+        margin-top: -40%;
+        margin-left: 7%; }
+
 /*MOBILE*/
 @media screen and (min-width: 320px) and (max-width: 599px) {
   body {
@@ -444,7 +515,7 @@ footer {
     .servicios .accordion {
       width: 80%; }
       .servicios .accordion .accordion-body {
-        margin-bottom: 10%; }
+        margin-bottom: 30%; }
   .gallery-container {
     overflow-x: hidden;
     margin-top: 10%;
@@ -489,7 +560,11 @@ footer {
           height: 40px; }
           .contact-container .social .net-contact img:hover {
             width: 45px;
-            height: 45px; } }
+            height: 45px; }
+  .error-back .error-container p {
+    margin-top: 120%;
+    margin-left: 10%;
+    width: 300px; } }
 
 /*TABLET*/
 @media screen and (min-width: 768px) and (max-width: 1023px) {
@@ -562,7 +637,10 @@ footer {
       .contact-container .social p {
         margin-left: 70px; }
       .contact-container .social .classic-contact {
-        margin-left: 120px; } }
+        margin-left: 120px; }
+  .error-back .error-container p {
+    margin-top: 40%;
+    margin-left: 16%; } }
 
 /*PANTALLA GRANDE*/
 @media screen and (min-width: 1400px) {
@@ -581,4 +659,6 @@ footer {
       .contact-container .contact-form #btn {
         margin-left: 230%; }
     .contact-container .social {
-      margin-bottom: 20%; } }
+      margin-bottom: 20%; }
+  .error-back .error-container p {
+    margin-left: 32%; } }
