@@ -25,16 +25,16 @@
         margin-top: 7%;
     }
     .carousel-item{
-        width: 50%;
+        //width: 51%;
         height: 700px;
         margin-top: 8%;
         margin-left: 51%;
         img{
-            margin-left: 13.5%;
+            margin-left: 13%;
             margin-top: 0%;
-            width: 642px;
+            width: 700px;
             border: solid 2px $rosaClaro;
             position: fixed;
-        } 
+        }  
     }
 }

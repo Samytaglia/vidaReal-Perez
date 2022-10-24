@@ -28,22 +28,21 @@ header {
   position: fixed;
   z-index: 1;
 }
-
-nav ul {
+header nav ul {
   display: flex;
   justify-content: space-evenly;
   font-size: 1.2rem;
   align-items: center;
 }
-nav ul li {
+header nav ul li {
   display: flex;
   justify-content: center;
 }
-nav ul li a {
+header nav ul li a {
   color: white;
   text-decoration: none;
 }
-nav ul li a:hover {
+header nav ul li a:hover {
   color: rgba(247, 210, 210, 0.938);
 }
 
@@ -57,7 +56,7 @@ nav ul li a:hover {
 }
 
 .title {
-  margin-top: 150px;
+  margin-top: 145px;
   margin-bottom: 5%;
 }
 
@@ -90,7 +89,6 @@ h4 {
 }
 
 h5 {
-  font-family: "Satisfy", cursive;
   color: #bb4c5f;
 }
 
@@ -163,13 +161,12 @@ footer p {
   margin-top: 7%;
 }
 .index-container .carousel-item {
-  width: 50%;
   height: 700px;
   margin-top: 8%;
-  margin-left: 49.5%;
+  margin-left: 51%;
 }
 .index-container .carousel-item img {
-  margin-left: 13.5%;
+  margin-left: 13%;
   margin-top: 0%;
   width: 700px;
   border: solid 2px rgba(247, 210, 210, 0.938);
@@ -276,7 +273,7 @@ footer p {
   margin-left: -620px;
 }
 .gallery-main .picture-frame {
-  background-image: url(../images/fotos.jpg);
+  background-image: url(../images/fotos.jpeg);
   background-repeat: no-repeat;
   background-size: 100%;
   width: 820px;
@@ -290,6 +287,11 @@ footer p {
   height: 307px;
   margin-top: 78px;
   margin-left: 165px;
+  transition: all 0.8s ease;
+}
+.gallery-main .picture-frame .pic img:hover {
+  transition: all 0.6s ease;
+  filter: brightness(50%);
 }
 .gallery-main .picture-frame .btn-container {
   margin-top: -23%;
@@ -323,7 +325,6 @@ footer p {
 }
 
 .contact-container {
-  margin-top: 150px;
   display: grid;
   grid-template-columns: 50% 50%;
   grid-template-rows: -webkit-min-content -webkit-min-content;
@@ -346,6 +347,7 @@ footer p {
   flex-direction: row;
   flex-wrap: wrap;
   margin-right: 10%;
+  margin-bottom: 20%;
 }
 .contact-container .contact-form .form-control {
   position: relative;
@@ -394,7 +396,8 @@ footer p {
   font-weight: bold;
   margin-top: 25%;
   margin-bottom: -15%;
-  margin-left: 250%;
+  text-align: center;
+  margin-left: 230%;
   text-decoration: none;
   text-align: center;
   color: black;
@@ -416,6 +419,7 @@ footer p {
   width: 315px;
   border-radius: 8px;
   margin-left: 60%;
+  margin-bottom: 20%;
 }
 .contact-container .social p {
   margin-top: 30px;
@@ -547,7 +551,8 @@ footer p {
   background-color: rgba(247, 210, 210, 0.938);
 }
 
-@media screen and (min-width: 320px) and (max-width: 479px) {
+/*MOBILE*/
+@media screen and (min-width: 320px) and (max-width: 599px) {
   body {
     height: auto;
     overflow-x: hidden;
@@ -555,20 +560,22 @@ footer p {
   }
   header {
     margin-top: 0px;
-    position: fixed;
     z-index: 2;
-    height: 65px;
   }
-  .navbar .mobile-navbar {
+  header .navbar .mobile-navbar {
     background-color: rgb(56, 57, 58);
     margin-top: 2%;
   }
-  .navbar .mobile-navbar ul {
+  header .navbar .mobile-navbar ul {
     font-size: 1rem;
+  }
+  header .navbar .mobile-navbar ul li {
+    margin: 8%;
   }
   .logo {
     width: 94px;
     height: 78px;
+    margin-bottom: -25px;
   }
   h1 {
     margin-top: -18%;
@@ -605,18 +612,12 @@ footer p {
     width: 300px;
     position: relative;
     margin-top: 20%;
-    margin-left: 25%;
-  }
-  .about-container .title {
-    margin-top: -35px;
-    margin-left: -15px;
-  }
-  .about-container .title h1 {
-    margin-top: -80px;
+    margin-left: 12%;
+    margin-bottom: 5%;
   }
   .historia {
-    margin-top: -25px;
-    margin-bottom: 100px;
+    margin-top: -10px;
+    margin-bottom: 110px;
     width: 280px;
     display: inline-block;
   }
@@ -625,7 +626,7 @@ footer p {
   }
   .servicios {
     margin-top: 10%;
-    margin-left: -60px;
+    margin-left: -55px;
   }
   .servicios .accordion {
     width: 80%;
@@ -657,6 +658,7 @@ footer p {
     grid-template-areas: "title" "social" "form";
   }
   .contact-container .title {
+    margin-top: 153px;
     margin-bottom: 8%;
   }
   .contact-container .contact-form {
@@ -690,5 +692,102 @@ footer p {
   .contact-container .social .net-contact img:hover {
     width: 45px;
     height: 45px;
+  }
+}
+/*TABLET*/
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+  header {
+    z-index: 2;
+  }
+  header .navbar .mobile-navbar {
+    background-color: rgb(56, 57, 58);
+    margin-top: 2%;
+  }
+  header .navbar .mobile-navbar li {
+    margin: 8%;
+  }
+  .logo {
+    margin-bottom: -50px;
+  }
+  .index-container h1 {
+    margin-top: 20%;
+    margin-left: 13%;
+    width: 75%;
+  }
+  .index-container button {
+    visibility: hidden;
+  }
+  .index-container .carousel-item {
+    margin-top: 90%;
+    margin-left: -9%;
+  }
+  .index-container .carousel-item img {
+    width: 700px;
+    position: relative;
+    margin-top: -35%;
+    margin-left: 13.5%;
+  }
+  footer {
+    width: 100%;
+    position: fixed;
+    z-index: 2;
+  }
+  .about-container h1 {
+    margin-top: -5%;
+  }
+  .title {
+    margin-top: 14%;
+  }
+  .servicios {
+    margin-top: 15%;
+  }
+  .contact-container .title h1 {
+    margin-top: 14%;
+  }
+  .gallery-container {
+    margin-top: 10%;
+    margin-bottom: 75px;
+  }
+  .gallery-container .picture-frame {
+    width: 720px;
+    height: 363px;
+  }
+  .gallery-container .picture-frame .pic img {
+    width: 430px;
+    height: 270px;
+    margin-top: 70px;
+    margin-left: 145px;
+  }
+  .contact-container {
+    background-image: url(../images/back.jpeg);
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: -webkit-min-content;
+    grid-template-rows: min-content;
+    grid-template-areas: "title" "social" "form";
+  }
+  .contact-container .title {
+    margin-bottom: 8%;
+  }
+  .contact-container .contact-form {
+    grid-area: form;
+    margin-left: 70px;
+    margin-bottom: 150px;
+    width: 650px;
+  }
+  .contact-container .contact-form #btn {
+    margin-left: 65px;
+  }
+  .contact-container .social {
+    grid-area: social;
+    width: 400px;
+    margin-left: 2px;
+    margin-bottom: 50px;
+  }
+  .contact-container .social p {
+    margin-left: 70px;
+  }
+  .contact-container .social .classic-contact {
+    margin-left: 120px;
   }
 }/*# sourceMappingURL=style.css.map */
