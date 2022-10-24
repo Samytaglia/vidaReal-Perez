@@ -277,4 +277,14 @@
         }
     }     
 }
- 
+ /*PANTALLA GRANDE*/
+ @media screen and (min-width: 1024px){
+ .index-container{
+    .carousel-item{
+        img{
+            margin-left: 12%;
+            width: 700px;
+        }
+    }
+}
+ }

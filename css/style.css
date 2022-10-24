@@ -130,9 +130,9 @@ footer {
     margin-top: 8%;
     margin-left: 51%; }
     .index-container .carousel-item img {
-      margin-left: 13%;
+      margin-left: 7%;
       margin-top: 0%;
-      width: 700px;
+      width: 643px;
       border: solid 2px rgba(247, 210, 210, 0.938);
       position: fixed; }
 
@@ -630,3 +630,9 @@ footer {
         margin-left: 70px; }
       .contact-container .social .classic-contact {
         margin-left: 120px; } }
+
+/*PANTALLA GRANDE*/
+@media screen and (min-width: 1024px) {
+  .index-container .carousel-item img {
+    margin-left: 12%;
+    width: 700px; } }
