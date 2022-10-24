@@ -1,5 +1,5 @@
 .contact-container{
-    //margin-top: 10px;
+    background-image: url(/images/back.jpeg);
     display: grid;
     grid-template-columns: 50% 50%;
     grid-template-rows: min-content min-content;
@@ -10,7 +10,7 @@
     .title{
         grid-area: title;
         width: 100%;
-        margin-top: 0%;
+        margin-top: 10%;
     }
     .contact-form{
         grid-area: form;
@@ -22,7 +22,7 @@
         flex-direction: row;
         flex-wrap: wrap;
         margin-right: 10%;
-        margin-bottom: 20%;
+        margin-bottom: 25%;
         .form-control{
             position: relative;
             margin: 20px 0 0;
@@ -73,7 +73,7 @@
             margin-top: 25%;
             margin-bottom: -15%;
             text-align: center;
-            margin-left: 230%;
+            margin-left: 100%;
             text-decoration: none;
             text-align: center;
             color: black;
@@ -96,7 +96,7 @@
         width: 315px;
         border-radius: 8px;
         margin-left: 60%;
-        margin-bottom: 20%;
+        margin-bottom: 25%;
         p{
             margin-top: 30px;
             margin-left: 20px;

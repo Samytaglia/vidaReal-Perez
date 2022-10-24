@@ -73,6 +73,12 @@
         }
     }
     
+    .about-container{
+        h1{
+            margin-top: -17%;
+        }
+    }
+
     .historia{
         margin-top: -10px;
         margin-bottom: 110px;
@@ -278,13 +284,37 @@
     }     
 }
  /*PANTALLA GRANDE*/
- @media screen and (min-width: 1024px){
+ @media screen and (min-width: 1400px){
  .index-container{
     .carousel-item{
         img{
-            margin-left: 12%;
-            width: 700px;
+            margin-left: 14%;
+            margin-top: 2%;
+            width: 623px;
         }
     }
 }
- }
+
+.about-container{
+    h1{
+        margin-top: 0%;
+    }
+}
+
+.contact-container{
+    background-image: none;
+    .title{
+        margin-top: 8%;
+    }
+    .contact-form{
+        margin-bottom: 20%;
+        #btn{
+            margin-left: 230%;
+        }
+    }
+    .social{
+    margin-bottom: 20%;
+    }
+}   
+
+}
