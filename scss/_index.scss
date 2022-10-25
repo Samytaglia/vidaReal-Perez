@@ -23,17 +23,19 @@
     .carousel-container button{
         margin-left: 63%;
         margin-top: 7%;
+        position: fixed;
     }
     .carousel-item{
-        height: 700px;
+        height: 630px;
         margin-top: 8%;
         margin-left: 51%;
+        position: fixed;
         img{
             margin-left:10%;
-            margin-top: 1.5%;
-            width: 638px;
+            margin-top: 3%;
+            width: 630px;
             border: solid 2px $rosaClaro;
-            position: fixed;
+            position: absolute;
         }  
     }
 }

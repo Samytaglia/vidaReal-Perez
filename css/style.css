@@ -124,17 +124,19 @@ footer {
     line-height: 100px; }
   .index-container .carousel-container button {
     margin-left: 63%;
-    margin-top: 7%; }
+    margin-top: 7%;
+    position: fixed; }
   .index-container .carousel-item {
-    height: 700px;
+    height: 630px;
     margin-top: 8%;
-    margin-left: 51%; }
+    margin-left: 51%;
+    position: fixed; }
     .index-container .carousel-item img {
       margin-left: 10%;
-      margin-top: 1.5%;
-      width: 638px;
+      margin-top: 3%;
+      width: 630px;
       border: solid 2px rgba(247, 210, 210, 0.938);
-      position: fixed; }
+      position: absolute; }
 
 .about-container {
   display: flex;
@@ -156,7 +158,8 @@ footer {
   margin-bottom: 10%; }
   .historia .historia-title {
     margin-top: auto;
-    display: table; }
+    display: table;
+    margin-left: 15%; }
     .historia .historia-title h3 {
       position: relative;
       float: left;

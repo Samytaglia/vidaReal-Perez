@@ -67,7 +67,7 @@
                 width: 300px;
                 position: relative;
                 margin-top: 20%;
-                margin-left: 12%;
+                margin-left: 14%;
                 margin-bottom: 5%;
             }
         }
@@ -302,6 +302,85 @@
         }    
 }
 
+/*LAPTOPS*/
+@media screen and (min-width: 1024px) and (max-width: 1399px){
+    header{
+        height: 50px;
+        z-index: 2;
+        position: fixed;
+        .navbar{
+            position: fixed;
+            .mobile-navbar{
+                margin-top: 0%;
+                ul{
+                    font-size: 1rem;
+                }
+            }
+        }
+    }
+
+    .logo{
+        width: 94px;
+        height: 78px;
+        margin-bottom: -25px;
+    }
+    
+    h1{
+        font-size: 2rem;
+        height: 120px;
+        margin-top: -2%;
+    }
+
+    footer{
+        position: fixed;
+        z-index: 2;
+        p{
+            margin-top: 28px;
+            margin-left: 2%;
+            height: 25px;
+        }  
+}
+
+.animated-footer{
+    height: 35px;
+}
+
+.index-container{
+    h1{
+        margin-top: 13%;
+        font-size: 3.5rem;
+    }
+    .carousel-item{
+        position: absolute;
+        height: 370px;
+        margin-left: 52%;
+        img{
+            margin-left:10%;
+            margin-top: 5%;
+            width: 368px;
+        }
+    }
+}
+
+.about-container{
+    h1{
+        margin-top: -4%;
+    }
+}
+
+.historia{
+    .historia-title{
+        margin-left: 85px;
+                }                
+            }
+
+    .servicios{
+        height: 100%;
+        .accordion{
+            z-index: -1;
+        }
+    }
+
  /*PANTALLA GRANDE*/
  @media screen and (min-width: 1400px){
     .index-container{
@@ -343,4 +422,5 @@
             }
         }
     }     
+}
 }
