@@ -384,9 +384,13 @@
  /*PANTALLA GRANDE*/
  @media screen and (min-width: 1400px){
     .index-container{
+        .carousel-container button{
+            margin-left: 61%;
+            margin-top: 30%;
+        }
         .carousel-item{
             img{
-            margin-left: 14%;
+            margin-left: 1%;
             margin-top: 2%;
             width: 623px;
             }

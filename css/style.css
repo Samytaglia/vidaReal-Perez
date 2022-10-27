@@ -132,7 +132,7 @@ footer {
     margin-left: 51%;
     position: fixed; }
     .index-container .carousel-item img {
-      margin-left: 10%;
+      margin-left: 12%;
       margin-top: 3%;
       width: 630px;
       border: solid 2px rgba(247, 210, 210, 0.938);
@@ -422,7 +422,7 @@ footer {
     .error-back .error-container p {
       position: fixed;
       margin-top: 35%;
-      margin-left: 30%;
+      margin-left: 31%;
       font-size: 1.2rem; }
       .error-back .error-container p a {
         color: #a1d2ee;
@@ -501,7 +501,7 @@ footer {
       width: 300px;
       position: relative;
       margin-top: 20%;
-      margin-left: 12%;
+      margin-left: 14%;
       margin-bottom: 5%; }
   .about-container h1 {
     margin-top: -17%; }
@@ -645,10 +645,62 @@ footer {
     margin-top: 40%;
     margin-left: 16%; } }
 
-/*PANTALLA GRANDE*/
-@media screen and (min-width: 1400px) {
+/*LAPTOPS*/
+@media screen and (min-width: 1024px) and (max-width: 1399px) {
+  header {
+    height: 50px;
+    z-index: 2;
+    position: fixed; }
+    header .navbar {
+      position: fixed; }
+      header .navbar .mobile-navbar {
+        margin-top: 0%; }
+        header .navbar .mobile-navbar ul {
+          font-size: 1rem; }
+  .logo {
+    width: 94px;
+    height: 78px;
+    margin-bottom: -25px; }
+  h1 {
+    font-size: 2rem;
+    height: 120px;
+    margin-top: -2%; }
+  footer {
+    position: fixed;
+    z-index: 2; }
+    footer p {
+      margin-top: 28px;
+      margin-left: 2%;
+      height: 25px; }
+  .animated-footer {
+    height: 35px; }
+  .index-container h1 {
+    margin-top: 13%;
+    font-size: 3.5rem; }
+  .index-container .carousel-item {
+    position: absolute;
+    height: 370px;
+    margin-left: 52%; }
+    .index-container .carousel-item img {
+      margin-left: 10%;
+      margin-top: 5%;
+      width: 368px; }
+  .about-container h1 {
+    margin-top: -4%; }
+  .historia .historia-title {
+    margin-left: 85px; }
+  .servicios {
+    height: 100%; }
+    .servicios .accordion {
+      z-index: -1; }
+  /*PANTALLA GRANDE*/ }
+
+@media screen and (min-width: 1024px) and (max-width: 1399px) and (min-width: 1400px) {
+  .index-container .carousel-container button {
+    margin-left: 61%;
+    margin-top: 30%; }
   .index-container .carousel-item img {
-    margin-left: 14%;
+    margin-left: 1%;
     margin-top: 2%;
     width: 623px; }
   .about-container h1 {
